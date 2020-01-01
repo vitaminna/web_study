@@ -22,4 +22,6 @@
 3.首行缩进 text-indent 2em
 4.字间距 letter-spacing  2px
 5.单词间距 word-spacing 
+6.半透明效果 rgb(a,b,c,d) d是取值范围0-1
+7.文字阴影 text-shadow (a,b,c,d)ab是必须要写的，后面两个参数可以省略
 ```
