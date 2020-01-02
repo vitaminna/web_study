@@ -130,3 +130,19 @@ border-top-size/color/style /*某个边框*/
 - 背景图片 (适合做一些背景图片，小图标)
   background-size：200px 600px;　//更该图片的大小
   background-postion:30px //图片位置
+  
+  
+ #### 补充问题
+  - 行内元素只有左右的间距，没有上下span{margin:30px}左右的
+  - 块元素外边距合并，只出现在上下。以最大的为准，直接给一个人就好，距离上面直接确定的距离
+  - 外边距合并，对于外层加一个边框，可以使内部下沉
+  ![](./images/8.png)
+  ![](./images/9.png)
+ ### 盒子尺寸 
+   - 空间尺寸：width+border+padding+margin
+   - 内核尺寸，实际尺寸：width+border+padding
+   - 如果盒子未指定宽度，padding-left就不会影响大小
+   ![](./images/7.png)
+ ### 例子
+ ![](./images/10.png)
+ - 取消列表自带的小点 list-style：none
