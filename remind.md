@@ -50,7 +50,8 @@
 - 伪元素选择器
   - div::before{content:内容 }放在所选择的标签内部的前面
   - div::after{content:内容}放在所选择的标签内部的后面
-- 背景图(可以控制平铺，位于div中的位置)多背景时，将颜色加载左后一个图上
+### 背景图
+- (可以控制平铺，位于div中的位置)多背景时，将颜色加载左后一个图上
 - 网页中的坐标轴（以左上角为坐标原点,向右为正，向下为正）
    - background-postion：10px，10px; 第一个是水平的位置
    - background-postion：top,center;
@@ -75,3 +76,57 @@ a{
     font-size： 文字的大小
 }1
 ```
+---
+### 权重问题(优先级)
+```text
+权重叠加（标签/类。标签。标签，权重相加）数值之间没有进制，0，0,0,10
+继承的权重为0；使用自己的属性，只要自己有就使用自己的
+```
+![](./images/2.png)
+![](./images/4.png)
+![](./images/5.png)
+![](./images/6.png)````````````
+
+###  盒子模型
+- 盒子的边框设置
+```css
+border-color：red，      /*颜色*/
+border-style：solid，dashed，dotted， /*边框样式*/
+border-width：1px，/*边框粗细*/
+border-top-size/color/style /*某个边框*/ 
+```
+- 表格相关信息
+```html
+<style>
+    table{
+    border-collapse: collapse; /* 合并相邻的边框*/
+    }
+</style>
+
+<table cellpadding="0" cellpadding="0">
+   <tr>
+        <td></td>
+   </tr>
+</table>
+```
+- 圆角矩形
+    - border-radius:10px；四个角相同，取宽高的一半50%就是圆形
+    - border-radius:10px 40px； 左上角，右下角10px, 右上左下40px
+    - 高度减半， border-radius：100px;成为一个椭圆
+-　padding　内边距；内容距离边框的距离
+    padding-left/right/bottom/top
+    padding:两个值：上下，左右
+    padding：三个值：上，左右，下
+    padding：四个值：上右下左，顺时针
+- margin 外边距，必须是块元素
+    margin:30px auto 左右居中
+- 插入图片(产品展示)
+```html
+    width:200px;
+    height:50px; //修改图片大小
+    margin-left：修改图片位置 ，因为图片也是一个盒子
+
+```   
+- 背景图片 (适合做一些背景图片，小图标)
+  background-size：200px 600px;　//更该图片的大小
+  background-postion:30px //图片位置
