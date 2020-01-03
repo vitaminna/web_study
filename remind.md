@@ -23,7 +23,7 @@
 4.字间距 letter-spacing  2px
 5.单词间距 word-spacing 
 6.半透明效果 rgb(a,b,c,d) d是取值范围0-1
-7.文字阴影 text-shadow (a,b,c,d)ab是必须要写的（水平，上下时），后面两个参数可以省略
+7.文字阴影 text-shadow (水平，垂直，模糊，颜色rgba（）)ab是必须要写的（水平，上下时），后面两个参数可以省略
 ```
 > div是块级元素，
 > 行内元素（a,span,)给出宽高无意义，不会显示
@@ -132,13 +132,14 @@ border-top-size/color/style /*某个边框*/
   background-postion:30px //图片位置
   
   
- #### 补充问题
+#### 补充问题
   - 行内元素只有左右的间距，没有上下span{margin:30px}左右的
   - 块元素外边距合并，只出现在上下。以最大的为准，直接给一个人就好，距离上面直接确定的距离
-  - 外边距合并，对于外层加一个边框，可以使内部下沉
+  - 外边距合并，对于外层加一个边框，可以使内部下沉,或者给父元素加一个额overflow：hidden
+  - 所有的输入框也要清除边框 boder ：0
   ![](./images/8.png)
   ![](./images/9.png)
- ### 盒子尺寸 
+### 盒子尺寸 
    - 空间尺寸：width+border+padding+margin
    - 内核尺寸，实际尺寸：width+border+padding
    - 如果盒子未指定宽度，padding-left就不会影响大小
@@ -146,3 +147,44 @@ border-top-size/color/style /*某个边框*/
  ### 例子
  ![](./images/10.png)
  - 取消列表自带的小点 list-style：none
+ 
+ 
+### css3盒子（盒子阴影）
+ - box-sizing： content-box
+ - box-sizing： border-box
+![](./images/11.png)
+
+### 浮动
+```text
+- 普通流：块自上而下 ，行左往右（块元素直接设置成行内块，两个之间会有间距 不要用div{dispalay:inline-block}）
+- 浮动：只可以左右浮动（页面上面的div是浮动的，下面的就会往上去，占用他原本的位置，，呈现出上面压着下面的样子）
+- 块元素加了浮动，就会有行内块的属性，宽度为给定的情况下，会按实际内容显示宽度
+- 行内元素加了浮动，也会具有行内块的属性，盒子大小由内容决定，可以更改大小
+
+### 清除浮动
+ - 标准流父级元素可以不给高度
+ - 浮动出现的话，要清除浮动 
+   - 在浮动盒子的后面追加空标签设置属性 clear： both
+   - 在父元素添加 overflow:hidden
+   - 伪元素清除.
+          - clearfix:after{
+            content：".",
+            display:block,
+            height:0,
+            visibility:hidden;
+            clear:both;}
+          - clearfix{
+             *zoom:1
+             }
+   -双伪元素清除浮动
+   - clear:after,clearfix:before{
+        content:"",
+        display:table;
+   }
+   .clearfix:after{
+        clear:both;
+   }
+   .clearfix{
+        *zoom:1;
+   }
+        
