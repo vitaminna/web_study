@@ -187,4 +187,12 @@ border-top-size/color/style /*某个边框*/
    .clearfix{
         *zoom:1;
    }
+   
+###定位
+- postion：static
+- postion：relative 相对偏移，他原本的位置还在，没人能够占有
+- postion： absolote 绝对定位，不占有位置，完全脱离标准流的，飘起来的    
+- （绝对定位）如果父亲没有定位，子元素会以浏览器的左上角为原点，进行定位
+- （绝对定位)如果父亲有定位，子元素以父亲为基准找定位，或找爷爷辈的定位为基准
+- 子绝父相
         
