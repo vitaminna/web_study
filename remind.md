@@ -48,9 +48,12 @@
    - [*=值]只要包含值得标签都选择
 ```
 ###伪元素选择器
+```text
   - div::before{content:内容 }放在所选择的标签内部的前面
   - div::after{content:内容}放在所选择的标签内部的后面
+```
 ### 背景图
+```text
 - (可以控制平铺，位于div中的位置)多背景时，将颜色加载左后一个图上
 - 网页中的坐标轴（以左上角为坐标原点,向右为正，向下为正）
    - background-postion：10px，10px; 第一个是水平的位置
@@ -63,7 +66,7 @@
 - 将a标签设置相应的高度，宽度，在一行展示，需要将display：inline-block.
    在一行文本中，设定行高等于盒子的高度，就可以达到，文字垂直居中
 - 文本的装饰 text-decoration ： none，underline，overline ，line-through
-
+```
 ```html
 a{
     height:50px;
@@ -109,6 +112,7 @@ border-top-size/color/style /*某个边框*/
    </tr>
 </table>
 ```
+```text
 - 圆角矩形
     - border-radius:10px；四个角相同，取宽高的一半50%就是圆形
     - border-radius:10px 40px； 左上角，右下角10px, 右上左下40px
@@ -121,6 +125,7 @@ border-top-size/color/style /*某个边框*/
 - margin 外边距，必须是块元素
     margin:30px auto 左右居中
 - 插入图片(产品展示)
+```
 ```html
     width:200px;
     height:50px; //修改图片大小
