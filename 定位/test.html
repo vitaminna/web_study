@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        ul{
+            list-style: none;
+        }
+        .outer{
+            width: 590px;
+            height: 470px;
+            margin: 100px auto;
+            position: relative;
+
+        }
+        .outer a img{
+            height:40px;
+        }
+        .outer a{
+            height: 40px;
+            width: 40px;
+            display: block;
+            position: absolute;
+            top: 50%;
+            margin-top: -20px;
+        }
+        .outer .left {
+            left: 0;
+        }
+        .outer .right{
+            right: 0;
+        }
+        .circle{
+            width: 120px;
+            height: 30px;
+            background-color: yellow;
+            position: absolute;
+            background: rgba(0,0,0,0.8);
+            bottom: 20px;
+            left: 50%;
+            margin-left: -60px;
+            padding-left: 3px;
+        }
+        .outer .circle li{
+            width: 15px;
+            height: 15px;
+            background-color: gray;
+            float: left;
+            margin: 4px;
+            margin-top: 6px;
+            border-radius: 50%;
+        }
+        .outer .circle .current{
+            background-color: yellow;
+        }
+    </style>
+</head>
+<body>
+        <div class="outer" >
+            <img src="../images/12.jpg">
+            <a href="#" class="left">  <img src="../images/13.ico"></a>
+            <a href="#" class="right">  <img src="../images/14.ico"></a>
+            <div class="circle">
+                <ul>
+                    <li class="current"></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+</body>
+</html>
