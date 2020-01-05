@@ -189,7 +189,7 @@ border-top-size/color/style /*某个边框*/
    }
    .clearfix:after{
         clear:both;
-   }
+   } 
    .clearfix{
         *zoom:1;
    }
@@ -215,4 +215,10 @@ border-top-size/color/style /*某个边框*/
       - auto 自动，超出才显示，
       - scroll :一直显示
       - hidden ：超出隐藏（用的最多）
+      
+### flex
+    - display:flex;
+    - justify-content：水平对齐
+    - align-items:垂直对齐：stretch
+    - align-content：
                              

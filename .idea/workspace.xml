@@ -2,6 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="05e48dd1-2a79-4483-8ede-ae6ef8db0b84" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/19.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/images/20.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vue.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/remind.md" afterPath="$PROJECT_DIR$/remind.md" />
     </list>
@@ -17,24 +20,24 @@
       <file leaf-file-name="background.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/demo_div/background.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="462">
+            <state relative-caret-position="42">
               <caret line="11" column="22" lean-forward="false" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="remind.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="remind.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/remind.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="504">
-                <caret line="115" column="0" lean-forward="false" selection-start-line="115" selection-start-column="0" selection-end-line="115" selection-end-column="0" />
+              <first_editor relative-caret-position="448">
+                <caret line="190" column="18" lean-forward="false" selection-start-line="190" selection-start-column="18" selection-end-line="190" selection-end-column="18" />
                 <folding>
-                  <marker date="1578135405364" expanded="true" signature="2229:2299" ph="..." />
-                  <marker date="1578135405364" expanded="true" signature="2240:2291" ph="{...}" />
-                  <marker date="1578135405364" expanded="true" signature="2340:2384" ph="..." />
-                  <marker date="1578135405364" expanded="true" signature="2348:2375" ph="..." />
+                  <marker date="1578200755779" expanded="true" signature="2229:2299" ph="..." />
+                  <marker date="1578200755779" expanded="true" signature="2240:2291" ph="{...}" />
+                  <marker date="1578200755779" expanded="true" signature="2340:2384" ph="..." />
+                  <marker date="1578200755779" expanded="true" signature="2348:2375" ph="..." />
                 </folding>
               </first_editor>
               <second_editor />
@@ -42,11 +45,21 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="vue.md" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/vue.md">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="116">
+              <caret line="47" column="11" lean-forward="true" selection-start-line="47" selection-start-column="11" selection-end-line="47" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="百度.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/百度/百度.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="491">
-              <caret line="51" column="12" lean-forward="true" selection-start-line="51" selection-start-column="12" selection-end-line="51" selection-end-column="12" />
+            <state relative-caret-position="2142">
+              <caret line="51" column="12" lean-forward="false" selection-start-line="51" selection-start-column="12" selection-end-line="51" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -121,6 +134,8 @@
         <option value="$PROJECT_DIR$/定位/test.html" />
         <option value="$PROJECT_DIR$/百度/百度.html" />
         <option value="$PROJECT_DIR$/remind.md" />
+        <option value="$PROJECT_DIR$/vue.remind" />
+        <option value="$PROJECT_DIR$/vue.md" />
       </list>
     </option>
   </component>
@@ -138,11 +153,11 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="880" />
-    <option name="y" value="24" />
-    <option name="width" value="1275" />
-    <option name="height" value="964" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="617" />
+    <option name="y" value="43" />
+    <option name="width" value="1293" />
+    <option name="height" value="965" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -197,6 +212,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -207,7 +223,7 @@
             <path>
               <item name="web_study" type="b2602c69:ProjectViewProjectNode" />
               <item name="web_study" type="462c0819:PsiDirectoryNode" />
-              <item name="百度" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -215,7 +231,6 @@
       </pane>
       <pane id="Scratches" />
       <pane id="AndroidView" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -345,7 +360,9 @@
       <workItem from="1578014522540" duration="9815000" />
       <workItem from="1578054993616" duration="1421000" />
       <workItem from="1578103913055" duration="11847000" />
-      <workItem from="1578131563313" duration="3848000" />
+      <workItem from="1578131563313" duration="3946000" />
+      <workItem from="1578194213291" duration="889000" />
+      <workItem from="1578197995345" duration="15823000" />
     </task>
     <task id="LOCAL-00001" summary="web学习">
       <created>1577873450847</created>
@@ -431,14 +448,21 @@
       <option name="project" value="LOCAL" />
       <updated>1578134750137</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="百度半成品">
+      <created>1578135420404</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1578135420404</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46950000" />
+    <option name="totallyTimeSpent" value="63760000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="617" y="43" width="1293" height="965" extended-state="0" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -452,7 +476,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24413647" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.5304136" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -516,6 +540,114 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/百度/百度.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2142">
+          <caret line="51" column="12" lean-forward="false" selection-start-line="51" selection-start-column="12" selection-end-line="51" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/定位/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3234">
+          <caret line="77" column="0" lean-forward="false" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/13.ico">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/14.ico">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/盒子模型练习/教师案例.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2100">
+          <caret line="50" column="24" lean-forward="false" selection-start-line="50" selection-start-column="24" selection-end-line="50" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/remind.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="9324">
+            <caret line="222" column="20" lean-forward="false" selection-start-line="222" selection-start-column="20" selection-end-line="222" selection-end-column="20" />
+            <folding>
+              <marker date="1578200755779" expanded="true" signature="2229:2299" ph="..." />
+              <marker date="1578200755779" expanded="true" signature="2240:2291" ph="{...}" />
+              <marker date="1578200755779" expanded="true" signature="2340:2384" ph="..." />
+              <marker date="1578200755779" expanded="true" signature="2348:2375" ph="..." />
+            </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo_div/background.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="11" column="22" lean-forward="false" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/百度/百度.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2142">
+          <caret line="51" column="12" lean-forward="true" selection-start-line="51" selection-start-column="12" selection-end-line="51" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/定位/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3234">
+          <caret line="77" column="0" lean-forward="false" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/13.ico">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/images/14.ico">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/盒子模型练习/教师案例.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2100">
+          <caret line="50" column="24" lean-forward="false" selection-start-line="50" selection-start-column="24" selection-end-line="50" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/remind.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="4830">
+            <caret line="115" column="0" lean-forward="false" selection-start-line="115" selection-start-column="0" selection-end-line="115" selection-end-column="0" />
+            <folding>
+              <marker date="1578200755779" expanded="true" signature="2229:2299" ph="..." />
+              <marker date="1578200755779" expanded="true" signature="2240:2291" ph="{...}" />
+              <marker date="1578200755779" expanded="true" signature="2340:2384" ph="..." />
+              <marker date="1578200755779" expanded="true" signature="2348:2375" ph="..." />
+            </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/demo_div/background.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="462">
@@ -530,10 +662,10 @@
           <first_editor relative-caret-position="6258">
             <caret line="149" column="24" lean-forward="false" selection-start-line="149" selection-start-column="24" selection-end-line="149" selection-end-column="24" />
             <folding>
-              <marker date="1578135405364" expanded="true" signature="2229:2299" ph="..." />
-              <marker date="1578135405364" expanded="true" signature="2240:2291" ph="{...}" />
-              <marker date="1578135405364" expanded="true" signature="2340:2384" ph="..." />
-              <marker date="1578135405364" expanded="true" signature="2348:2375" ph="..." />
+              <marker date="1578200755779" expanded="true" signature="2229:2299" ph="..." />
+              <marker date="1578200755779" expanded="true" signature="2240:2291" ph="{...}" />
+              <marker date="1578200755779" expanded="true" signature="2340:2384" ph="..." />
+              <marker date="1578200755779" expanded="true" signature="2348:2375" ph="..." />
             </folding>
           </first_editor>
           <second_editor />
@@ -596,10 +728,10 @@
           <first_editor relative-caret-position="7938">
             <caret line="189" column="3" lean-forward="true" selection-start-line="189" selection-start-column="3" selection-end-line="189" selection-end-column="3" />
             <folding>
-              <marker date="1578135405364" expanded="true" signature="2229:2299" ph="..." />
-              <marker date="1578135405364" expanded="true" signature="2240:2291" ph="{...}" />
-              <marker date="1578135405364" expanded="true" signature="2340:2384" ph="..." />
-              <marker date="1578135405364" expanded="true" signature="2348:2375" ph="..." />
+              <marker date="1578200755779" expanded="true" signature="2229:2299" ph="..." />
+              <marker date="1578200755779" expanded="true" signature="2240:2291" ph="{...}" />
+              <marker date="1578200755779" expanded="true" signature="2340:2384" ph="..." />
+              <marker date="1578200755779" expanded="true" signature="2348:2375" ph="..." />
             </folding>
           </first_editor>
           <second_editor />
@@ -628,10 +760,10 @@
           <first_editor relative-caret-position="5796">
             <caret line="138" column="25" lean-forward="false" selection-start-line="138" selection-start-column="25" selection-end-line="138" selection-end-column="25" />
             <folding>
-              <marker date="1578135405364" expanded="true" signature="2229:2299" ph="..." />
-              <marker date="1578135405364" expanded="true" signature="2240:2291" ph="{...}" />
-              <marker date="1578135405364" expanded="true" signature="2340:2384" ph="..." />
-              <marker date="1578135405364" expanded="true" signature="2348:2375" ph="..." />
+              <marker date="1578200755779" expanded="true" signature="2229:2299" ph="..." />
+              <marker date="1578200755779" expanded="true" signature="2240:2291" ph="{...}" />
+              <marker date="1578200755779" expanded="true" signature="2340:2384" ph="..." />
+              <marker date="1578200755779" expanded="true" signature="2348:2375" ph="..." />
             </folding>
           </first_editor>
           <second_editor />
@@ -652,10 +784,10 @@
           <first_editor relative-caret-position="5880">
             <caret line="140" column="9" lean-forward="false" selection-start-line="140" selection-start-column="9" selection-end-line="140" selection-end-column="9" />
             <folding>
-              <marker date="1578135405364" expanded="true" signature="2229:2299" ph="..." />
-              <marker date="1578135405364" expanded="true" signature="2240:2291" ph="{...}" />
-              <marker date="1578135405364" expanded="true" signature="2340:2384" ph="..." />
-              <marker date="1578135405364" expanded="true" signature="2348:2375" ph="..." />
+              <marker date="1578200755779" expanded="true" signature="2229:2299" ph="..." />
+              <marker date="1578200755779" expanded="true" signature="2240:2291" ph="{...}" />
+              <marker date="1578200755779" expanded="true" signature="2340:2384" ph="..." />
+              <marker date="1578200755779" expanded="true" signature="2348:2375" ph="..." />
             </folding>
           </first_editor>
           <second_editor />
@@ -676,10 +808,10 @@
           <first_editor relative-caret-position="5460">
             <caret line="130" column="35" lean-forward="true" selection-start-line="130" selection-start-column="35" selection-end-line="130" selection-end-column="35" />
             <folding>
-              <marker date="1578135405364" expanded="true" signature="2229:2299" ph="..." />
-              <marker date="1578135405364" expanded="true" signature="2240:2291" ph="{...}" />
-              <marker date="1578135405364" expanded="true" signature="2340:2384" ph="..." />
-              <marker date="1578135405364" expanded="true" signature="2348:2375" ph="..." />
+              <marker date="1578200755779" expanded="true" signature="2229:2299" ph="..." />
+              <marker date="1578200755779" expanded="true" signature="2240:2291" ph="{...}" />
+              <marker date="1578200755779" expanded="true" signature="2340:2384" ph="..." />
+              <marker date="1578200755779" expanded="true" signature="2348:2375" ph="..." />
             </folding>
           </first_editor>
           <second_editor />
@@ -706,10 +838,10 @@
           <first_editor relative-caret-position="882">
             <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="22" />
             <folding>
-              <marker date="1578135405364" expanded="true" signature="2229:2299" ph="..." />
-              <marker date="1578135405364" expanded="true" signature="2240:2291" ph="{...}" />
-              <marker date="1578135405364" expanded="true" signature="2340:2384" ph="..." />
-              <marker date="1578135405364" expanded="true" signature="2348:2375" ph="..." />
+              <marker date="1578200755779" expanded="true" signature="2229:2299" ph="..." />
+              <marker date="1578200755779" expanded="true" signature="2240:2291" ph="{...}" />
+              <marker date="1578200755779" expanded="true" signature="2340:2384" ph="..." />
+              <marker date="1578200755779" expanded="true" signature="2348:2375" ph="..." />
             </folding>
           </first_editor>
           <second_editor />
@@ -755,14 +887,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
           <caret line="10" column="16" lean-forward="false" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/demo_div/background.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="11" column="22" lean-forward="false" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -814,8 +938,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/百度/百度.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="491">
-          <caret line="51" column="12" lean-forward="true" selection-start-line="51" selection-start-column="12" selection-end-line="51" selection-end-column="12" />
+        <state relative-caret-position="2142">
+          <caret line="51" column="12" lean-forward="false" selection-start-line="51" selection-start-column="12" selection-end-line="51" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/demo_div/background.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="11" column="22" lean-forward="false" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
           <folding />
         </state>
       </provider>
@@ -823,16 +955,24 @@
     <entry file="file://$PROJECT_DIR$/remind.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="504">
-            <caret line="115" column="0" lean-forward="false" selection-start-line="115" selection-start-column="0" selection-end-line="115" selection-end-column="0" />
+          <first_editor relative-caret-position="448">
+            <caret line="190" column="18" lean-forward="false" selection-start-line="190" selection-start-column="18" selection-end-line="190" selection-end-column="18" />
             <folding>
-              <marker date="1578135405364" expanded="true" signature="2229:2299" ph="..." />
-              <marker date="1578135405364" expanded="true" signature="2240:2291" ph="{...}" />
-              <marker date="1578135405364" expanded="true" signature="2340:2384" ph="..." />
-              <marker date="1578135405364" expanded="true" signature="2348:2375" ph="..." />
+              <marker date="1578200755779" expanded="true" signature="2229:2299" ph="..." />
+              <marker date="1578200755779" expanded="true" signature="2240:2291" ph="{...}" />
+              <marker date="1578200755779" expanded="true" signature="2340:2384" ph="..." />
+              <marker date="1578200755779" expanded="true" signature="2348:2375" ph="..." />
             </folding>
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="47" column="11" lean-forward="true" selection-start-line="47" selection-start-column="11" selection-end-line="47" selection-end-column="11" />
+          <folding />
         </state>
       </provider>
     </entry>
