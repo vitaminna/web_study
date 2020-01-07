@@ -409,7 +409,7 @@ model.exports{
 - 项目自己内部导入webpack  npm install webpack@3.6.0 --save-dev
 - 开发时依赖 --save-dev ,开发时依赖
 - 运行时依赖
-### vue脚手架
+### vue脚手架 （vue init webpack 项目名）
 - 项目名字：ProjectName :enter
 - 项目描述： Project description ：enter
 - 作者：读取的是git的作者
@@ -423,6 +423,12 @@ model.exports{
 - static 文件夹下的所有东西会原封不动的复制发dist下，如果静态资源放在src下，会根据文件大小决定
 - .babelc  "browsers": ["> 1%", "last 2 versions", "not ie <= 8"] 市场份额大于1%
 - .postcssrc.js 控制css
+#### runtimeOnly 与runtimecomplier的却别
+- runtimecomplier template -ast（语法树）-render-virtual dom -ui
+- runtimeOnly  render-virtual dom -ui
+- runtimeOnly render:function(creatElement){return createlement(App)}
+- createElement('标签','标签的属性','标签内的要展示的数据’ )
+    return createElement('h2','class:box',['你好啊',createElement('button'['按钮'])])
 ### 练习
 - 点击数组中的元素，该元素变颜色，其中的active 为一个css样式
 ![](./images/21.png) 
