@@ -367,7 +367,7 @@ plugins：[
   - 安装插件 npm install webpack-dev-server@2.9.3 --save-dev 对应webpack版本3.6
   - 配置
   - 这个时候运行的命令就会发生更改，需要在package.json script 配置新的指令
-  - "dev":webpack-dev-server --open自动打开网页
+  - "dev":webpack-dev-server --open自动打开网页 --inline 实时刷新 --color 有颜色，--progress 打包百分比进程
 ```text
 与model同级目录
 devServer：{
@@ -409,6 +409,20 @@ model.exports{
 - 项目自己内部导入webpack  npm install webpack@3.6.0 --save-dev
 - 开发时依赖 --save-dev ,开发时依赖
 - 运行时依赖
+### vue脚手架
+- 项目名字：ProjectName :enter
+- 项目描述： Project description ：enter
+- 作者：读取的是git的作者
+- 选择模式：暂时选择一
+- 选择路由：
+- 是否启动js检查：Use ESLint to lint your code? n
+- 如果启动了检查：选择采取哪一个规范：标准，爱彼迎，
+- 设置单元测试：n
+- 设置端到端测试，用nightWatch(selenium),自动执行浏览器，暂时不懂
+- 使用何种方式，npm 或者yarn
+- static 文件夹下的所有东西会原封不动的复制发dist下，如果静态资源放在src下，会根据文件大小决定
+- .babelc  "browsers": ["> 1%", "last 2 versions", "not ie <= 8"] 市场份额大于1%
+- .postcssrc.js 控制css
 ### 练习
 - 点击数组中的元素，该元素变颜色，其中的active 为一个css样式
 ![](./images/21.png) 
