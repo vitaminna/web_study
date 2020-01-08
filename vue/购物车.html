@@ -26,6 +26,7 @@
 </head>
 <body>
 <div id="app">
+    <a :href="con">点我啊</a>
     <div v-if="books.length>0">
         <table>
             <thead>
@@ -63,6 +64,7 @@
     const app = new Vue({
         el: '#app',
         data: {
+            con:"https://www.baidu.com/img/bd_logo1.png",
             books: [
                 {name: "算法导论", date: 2006 - 9, price: 85.00, num: 1},
                 {name: "UNIX编程艺术", date: 2006 - 2, price: 59.00, num: 1},

@@ -134,6 +134,51 @@ nums.filter(function (t) {
       p1+p2;
    },0)
 ```
+* 箭头函数
+```javascript 1.8
+const obj=function() {
+  
+}
+const ccc =(没有参数的情况)=> {
+   // 没有返回值 
+}
+const ddd =(num1,num2)=>{
+    return num1+num2;
+}
+const  fff =(num)=>{
+     return num*num;
+ }
+ // 括号可以省略
+ const  fff =num=>{
+     return num*num;
+ }
+ // 返回值问题
+ const test =()=>{
+    // 代码块
+ }
+ // 只有一行代码,有返回值
+ const ddd =(num1,num2)=>num1+num2;
+  // 只有一行代码,有返回值 //console.log返回值为undefined
+  const demo =()=>console.log("123")   
+ 只有一个函数，只有一行代码
+ const  aaa = h=>h+h;
+```
+* 箭头函数 中的this的使用(引用最近最近作用域中的this) 内层外层都是箭头函数时obj，其余都是Windows
+    - 向外层作用域中一层层找，直到有this
+```javascript 1.8
+const obj={
+    aaa(){
+        setTimeout(function() { 这个函数刚开始会把windows作为对象传进函数，所以this 为windows
+            console.log(this) //这种格式的都是Windows
+        })
+        this
+        setTimeout(()=>{ //这个函数本身是没有this的会自动向外罩一层，
+            consloe.log(this)   //是aaa这个函数{}，该函数是在对象里定义的所以这个this为obj
+        })
+    }
+    
+}
+```
 ### 三 监听
 watch {
     监听的属性（data内的值）
@@ -409,7 +454,7 @@ model.exports{
 - 项目自己内部导入webpack  npm install webpack@3.6.0 --save-dev
 - 开发时依赖 --save-dev ,开发时依赖
 - 运行时依赖
-### vue脚手架 （vue init webpack 项目名）
+### vue脚手架 （vue init webpack 项目名）(vue create 项目名)
 - 项目名字：ProjectName :enter
 - 项目描述： Project description ：enter
 - 作者：读取的是git的作者
@@ -429,6 +474,24 @@ model.exports{
 - runtimeOnly render:function(creatElement){return createlement(App)}
 - createElement('标签','标签的属性','标签内的要展示的数据’ )
     return createElement('h2','class:box',['你好啊',createElement('button'['按钮'])])
+####  cli3创建项目与相关配置 
+1.启动vue ui 在页面中进行配置
+2.在@vue中 webpack.config.js中进行 ，找到lib/service.js
+3.若想相关配置，自己创建一个vue.config.js
+### vue路由 脚手架会默认配置好
+- 安装路由：npm  install vue-router --save 运行时依赖
+- 在src目录下创建router/index.js
+- import Vue from 'vue' 引入vue
+  import Router from 'vue-router' 引入 vue-router
+  Vue.use(Router)  给vue安装插件  Vue.use(插件)
+  在main.js 中导入，写的文件夹，默认导入index.js ,在router/index.js中导出相关信息
+  const routers =[
+  ]
+  const router =new Router({
+    routers
+  })
+  export default router
+ 
 ### 练习
 - 点击数组中的元素，该元素变颜色，其中的active 为一个css样式
 ![](./images/21.png) 
