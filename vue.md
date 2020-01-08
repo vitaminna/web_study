@@ -486,12 +486,58 @@ model.exports{
   Vue.use(Router)  给vue安装插件  Vue.use(插件)
   在main.js 中导入，写的文件夹，默认导入index.js ,在router/index.js中导出相关信息
   const routers =[
+    {   
+        path:'/'  重定向到主页，并在地址栏中显示home
+        redirect:'/home'
+    }，{
+    path：‘’，
+    componnent：直接写上面引入的组件名
+    }
   ]
   const router =new Router({
-    routers
+    routers,
+    mode:'history'  将hash模式改为history模式，这样就没有#号了
   })
   export default router
- 
+```vue
+import Vue from 'vue'
+import Router from 'vue-router'
+import home from '../components/home'
+import about from '../components/about'
+Vue.use(Router)
+
+export default new Router({
+  mode:'history',
+  routes: [
+    {
+      path: '/',
+      redirect:'/home'
+    },
+    {
+      path: '/home',
+      component: home
+    },
+    {
+      path: '/about',
+      component: about
+    }
+  ]
+})
+```
+-  <router-link  to="/home">home</router-link>
+    to 用来指定跳转路径
+    tag 指定router-link 渲染为什么组件 ,就会被渲染成button<router-link tag=’button'  to="/home">home</router-link>
+    replace 不会留下history记录，指定replace,无法使用后退键
+    active-class ,当router-link 匹配的路由成功，回给当前元素设置一个router-link-active的class，设置active-class可修改默认的class名称
+    若要全局修改，则在mode 那个地方，也就是router的那个js中加入 linkactiveClass
+    <router-view></router-view>
+- 通过代码控制跳转，vue 给每个组件都添加了一个data属性$router,直接用this.$rouer取出来用
+   给对应的元素添加相关的触发方法，通过this.$router.push('/home'),this.$router.replace()
+- 在地址栏添加相应的参数，带参跳转
+   首先采用的是restful风格传参，在配置路由信息时 { path: '/about/:参数名', component: about}
+   在<router-link  to="/home/传递的参数">home</router-link> 如果这个参数是从data内部取得，动态绑定
+   <router-link  :to="'/home/'+userId">home</router-link>,这个userId是从data内部动态决定的
+   取出地址栏中的相关参数信息，则在方法中获取this.$route.params.参数名，如果在插值表达式中省去this
 ### 练习
 - 点击数组中的元素，该元素变颜色，其中的active 为一个css样式
 ![](./images/21.png) 
