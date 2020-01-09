@@ -202,8 +202,9 @@ watch {
       (3)props:{变量名:{type:变量类型,default:默认值，required:true}}，当父组件没传时，就用子组件.如果default是一个数组则需要
          写成函数的样子default(){return[]/{}}
       (4)props:{validator:function(){自定义验证}}
-   -  (2)在调用方也就是父组件通过v-bind:变量名="父组件内代传递的值”,父组件传值时，变量名使用驼峰时用-代替
+   -  (2)在调用方也就是父组件通过v-bind:变量名="父组件内传递的变量值”,父组件传值时，变量名使用驼峰时用-代替
    -  (3)子组件传值时就直接使用变量名
+   -  (4) 若父组件传递的就是普通的固定的值，并不是从自己内部的data取出，直接固定 子组件接收变量名="需要传递的数据"
 ##### 2.子组件向父组件传值
         在子组件内 this.$emit(事件的名字，参数)
         在父组件内监听事件 v-on:事件的名字="父组件自己的的方法(这里可以不带参数)"，父组件会默认把参数带过去
@@ -470,9 +471,9 @@ model.exports{
 - .postcssrc.js 控制css
 #### runtimeOnly 与runtimecomplier的却别
 - runtimecomplier template -ast（语法树）-render-virtual dom -ui
-- runtimeOnly  render-virtual dom -ui
-- runtimeOnly render:function(creatElement){return createlement(App)}
-- createElement('标签','标签的属性','标签内的要展示的数据’ )
+                - runtimeOnly  render-virtual dom -ui
+                - runtimeOnly render:function(creatElement){return createlement(App)}
+                - createElement('标签','标签的属性','标签内的要展示的数据’ )
     return createElement('h2','class:box',['你好啊',createElement('button'['按钮'])])
 ####  cli3创建项目与相关配置 
 1.启动vue ui 在页面中进行配置
@@ -538,6 +539,78 @@ export default new Router({
    在<router-link  to="/home/传递的参数">home</router-link> 如果这个参数是从data内部取得，动态绑定
    <router-link  :to="'/home/'+userId">home</router-link>,这个userId是从data内部动态决定的
    取出地址栏中的相关参数信息，则在方法中获取this.$route.params.参数名，如果在插值表达式中省去this
+   通过代码控制跳转，vue 给每个组件都添加了一个data属性$router,直接用this.$rouer取出来用
+   给对应的元素添加相关的触发方法，通过this.$router.push('/home'+this.data内部的属性),this.$router.replace()
+- 普通的传参模式
+    路由信息不需要更改
+    在设置跳转的link标签时 <router-link  :to="{path:'路径',query:{name:'变量'，age:'''}}">home</router-link>
+    取出地址栏中的相关参数信息，则在方法中获取this.$route.query.参数名，如果在插值表达式中省去this
+    通过代码控制跳转，vue 给每个组件都添加了一个data属性$router,直接用this.$rouer取出来用
+    给对应的元素添加相关的触发方法，通过this.$router.push({path:'路径',query:{name:data内部的值
+    }}),this.$router.replace()
+### 路由懒加载，js文件打包
+ - 如果不区分，会一次性加载全部的js,css代码，脚手架直接分开加载，区分为。1.用户的js，2.服务商/第三方的js，3.为了打包而进行的js转换的代码js
+ - const home =()=>import('../components/home');
+### 路由嵌套
+ - 在之前配置的路由的地方嵌套一个children[path:'不带/',components:懒加载组件名]
+ - 创建相应的子子组件，(谁用，谁留空间)在引用子组件的地方设置相应的链接，写上完整的路径名
+    <router-link  to="/home/message">homeMessage</router-link>
+  并且预留子组件的位置，留坑，<router-view>
+### 路由导航守卫
+> https://router.vuejs.org/zh/guide/advanced/navigation-guards.html#%E5%85%A8%E5%B1%80%E5%89%8D%E7%BD%AE%E5%AE%88%E5%8D%AB
+   - 更改标题：在created：document.title="名字"
+   - 使用全局守卫，在router/index.js内部写 router.beforeEach((to,from,next)=>{documnet.title=to.matched[0].title,next()})
+   - 在路由信息内部配置mata属性{ path: '/',meta:{title:'名字'}},
+   - 参考官方文档，可以在路由守卫中加入验证
+       router.beforeEach((to,from,next)=>{
+         console.log(to);
+         document.title=to.matched[0].meta.title;
+         next();  不要忘记调用next()方法
+       })
+   - router.afterEach((to,from,next)=>{  跳转后进行的操作
+   
+   })
+   - 路由独享守卫
+```vue
+ path: '/foo',
+      component: Foo,
+      beforeEnter: (to, from, next) => {
+        // ...
+      }
+```
+- 组件内的守卫
+```vue
+const Foo = {
+  template: `...`,
+  beforeRouteEnter (to, from, next) {
+    // 在渲染该组件的对应路由被 confirm 前调用
+    // 不！能！获取组件实例 `this`
+    // 因为当守卫执行前，组件实例还没被创建
+  },
+  beforeRouteUpdate (to, from, next) {
+    // 在当前路由改变，但是该组件被复用时调用
+    // 举例来说，对于一个带有动态参数的路径 /foo/:id，在 /foo/1 和 /foo/2 之间跳转的时候，
+    // 由于会渲染同样的 Foo 组件，因此组件实例会被复用。而这个钩子就会在这个情况下被调用。
+    // 可以访问组件实例 `this`
+  },
+  beforeRouteLeave (to, from, next) {
+    // 导航离开该组件的对应路由时调用
+    // 可以访问组件实例 `this`
+  }
+}
+```
+- 记录上次访问的位置
+1.使用<keep-alive exclude="需要排除的组件的name,home,about"> 包裹住router-view,保持组件不被频繁的销毁创建，页面活跃状态activited:deactived函数
+3. 如果没有这个，每次都会创建新的，每次离开都会销毁，在app.vue内部使用时使用，其他的所有组件都不会进行频繁的创建销毁
+2. 在data内部设置一个属性path用来记录跳转前的路径，初始值给想要默认展示的链接，
+3. 在actived函数内部使用this.$router.push(path)
+4. 在beforeRouteLeave函数内部更新path的值 this.path=this.$router.path   
+![](./images/30.png)   
+### 项目经验
+1.如果想给插槽设置一定的样式，给插槽包裹一层div，防止属性被替换掉
+2.关于路径问题，脚手架2的方法在webpack.base.conf.js中设置别名，如果不是import方式引入需要在前面加~,设置components、views、assets
+### css样式(引入css样式)
+- 在<style></style>内部引用样式，@import "地址"，或者在main.js 中require(地址)
 ### 练习
 - 点击数组中的元素，该元素变颜色，其中的active 为一个css样式
 ![](./images/21.png) 
