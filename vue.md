@@ -183,9 +183,7 @@ const obj={
 watch {
     监听的属性（data内的值）
     这里就是监听data内的name的值，这时候就不需要父子组件传值，双向改变，直接在子组件内监听，然后传值给父组件
-    name(newValue,oldValue){
-      
-    }
+    name(newValue,oldValue){}
 ### 四 组件
 #### 1. 父子组件
 - 在A里面注册B，将A注册在vue实例里 A就是父组件，B为子组件
@@ -525,13 +523,16 @@ export default new Router({
   ]
 })
 ```
--  <router-link  to="/home">home</router-link>
+```text
+ <router-link  to="/home">home</router-link>
     to 用来指定跳转路径
     tag 指定router-link 渲染为什么组件 ,就会被渲染成button<router-link tag=’button'  to="/home">home</router-link>
     replace 不会留下history记录，指定replace,无法使用后退键
     active-class ,当router-link 匹配的路由成功，回给当前元素设置一个router-link-active的class，设置active-class可修改默认的class名称
     若要全局修改，则在mode 那个地方，也就是router的那个js中加入 linkactiveClass
     <router-view></router-view>
+```
+```text
 - 通过代码控制跳转，vue 给每个组件都添加了一个data属性$router,直接用this.$rouer取出来用
    给对应的元素添加相关的触发方法，通过this.$router.push('/home'),this.$router.replace()
 - 在地址栏添加相应的参数，带参跳转
@@ -541,13 +542,14 @@ export default new Router({
    取出地址栏中的相关参数信息，则在方法中获取this.$route.params.参数名，如果在插值表达式中省去this
    通过代码控制跳转，vue 给每个组件都添加了一个data属性$router,直接用this.$rouer取出来用
    给对应的元素添加相关的触发方法，通过this.$router.push('/home'+this.data内部的属性),this.$router.replace()
-- 普通的传参模式
+-  普通的传参模式
     路由信息不需要更改
     在设置跳转的link标签时 <router-link  :to="{path:'路径',query:{name:'变量'，age:'''}}">home</router-link>
     取出地址栏中的相关参数信息，则在方法中获取this.$route.query.参数名，如果在插值表达式中省去this
     通过代码控制跳转，vue 给每个组件都添加了一个data属性$router,直接用this.$rouer取出来用
     给对应的元素添加相关的触发方法，通过this.$router.push({path:'路径',query:{name:data内部的值
     }}),this.$router.replace()
+ ```
 ### 路由懒加载，js文件打包
  - 如果不区分，会一次性加载全部的js,css代码，脚手架直接分开加载，区分为。1.用户的js，2.服务商/第三方的js，3.为了打包而进行的js转换的代码js
  - const home =()=>import('../components/home');
@@ -558,8 +560,8 @@ export default new Router({
   并且预留子组件的位置，留坑，<router-view>
 ### 路由导航守卫
 > https://router.vuejs.org/zh/guide/advanced/navigation-guards.html#%E5%85%A8%E5%B1%80%E5%89%8D%E7%BD%AE%E5%AE%88%E5%8D%AB
-   - 更改标题：在created：document.title="名字"
-   - 使用全局守卫，在router/index.js内部写 router.beforeEach((to,from,next)=>{documnet.title=to.matched[0].title,next()})
+   - 更改标题：在组件created：document.title="名字"
+   - 使用全局守卫，这里最好打印一下，看title在哪，取出来，在router/index.js内部写 router.beforeEach((to,from,next)=>{documnet.title=to.matched[0].title,next()})
    - 在路由信息内部配置mata属性{ path: '/',meta:{title:'名字'}},
    - 参考官方文档，可以在路由守卫中加入验证
        router.beforeEach((to,from,next)=>{
@@ -600,11 +602,13 @@ const Foo = {
 }
 ```
 - 记录上次访问的位置
-1.使用<keep-alive exclude="需要排除的组件的name,home,about"> 包裹住router-view,保持组件不被频繁的销毁创建，页面活跃状态activited:deactived函数
-3. 如果没有这个，每次都会创建新的，每次离开都会销毁，在app.vue内部使用时使用，其他的所有组件都不会进行频繁的创建销毁
-2. 在data内部设置一个属性path用来记录跳转前的路径，初始值给想要默认展示的链接，
-3. 在actived函数内部使用this.$router.push(path)
-4. 在beforeRouteLeave函数内部更新path的值 this.path=this.$router.path   
+```text
+* 使用<keep-alive exclude="需要排除的组件的name,home,about"> 包裹住router-view,保持组件不被频繁的销毁创建，页面活跃状态activited:deactived函数
+* 如果没有这个，每次都会创建新的，每次离开都会销毁，在app.vue内部使用时使用，其他的所有组件都不会进行频繁的创建销毁
+* 在data内部设置一个属性path用来记录跳转前的路径，初始值给想要默认展示的链接，
+* 在actived函数内部使用this.$router.push(path)
+* 在beforeRouteLeave函数内部更新path的值 this.path=this.$router.path   
+```
 ![](./images/30.png)   
 ### vuex学习(单一状态树，单一数据源，只有一个store，只有一个state)
 - 首先安装插件 npm  install vuex --save
@@ -678,7 +682,7 @@ export default store;
 ![](./images/34.png)                
 ### 项目经验
 1.如果想给插槽设置一定的样式，给插槽包裹一层div，防止属性被替换掉
-2.关于路径问题，脚手架2的方法在webpack.base.conf.js中设置别名，如果不是import方式引入需要在前面加~,设置components、views、assets
+### 关于路径问题，脚手架2的方法在webpack.base.conf.js中设置别名，如果不是import方式引入需要在前面加~,设置components、views、assets
 ### css样式(引入css样式)
 - 在<style></style>内部引用样式，@import "地址"，或者在main.js 中require(地址)
 ### promise的使用
