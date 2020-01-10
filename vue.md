@@ -96,7 +96,7 @@ for(let item of 数组){
     这里的item就是一个项目
 }
 ```
-* 直接更改数组的元素值，vue不会直接修改，更新dom，要采用其他方法 splice
+* 直接更改数组的元素值，数组[i]=20,vue不会直接修改，更新dom，要采用其他方法 splice
 * vue.set(数组，索引 ，修改后的值)
 * 数字.toFixed(保留的位数)
 * 数组filter函数  取出大于100的数到新的数组
@@ -135,7 +135,7 @@ nums.filter(function (t) {
    },0)
 ```
 * 箭头函数
-```javascript 1.8
+```text
 const obj=function() {
   
 }
@@ -156,16 +156,16 @@ const  fff =(num)=>{
  const test =()=>{
     // 代码块
  }
- // 只有一行代码,有返回值
+ // 只有一行代码,有返回值，连return都不需要写，会自动返回的
  const ddd =(num1,num2)=>num1+num2;
-  // 只有一行代码,有返回值 //console.log返回值为undefined
+  // 只有一行代码,自动返回 //console.log返回值为undefined
   const demo =()=>console.log("123")   
  只有一个函数，只有一行代码
  const  aaa = h=>h+h;
 ```
 * 箭头函数 中的this的使用(引用最近最近作用域中的this) 内层外层都是箭头函数时obj，其余都是Windows
     - 向外层作用域中一层层找，直到有this
-```javascript 1.8
+```text
 const obj={
     aaa(){
         setTimeout(function() { 这个函数刚开始会把windows作为对象传进函数，所以this 为windows
@@ -606,11 +606,147 @@ const Foo = {
 3. 在actived函数内部使用this.$router.push(path)
 4. 在beforeRouteLeave函数内部更新path的值 this.path=this.$router.path   
 ![](./images/30.png)   
+### vuex学习(单一状态树，单一数据源，只有一个store，只有一个state)
+- 首先安装插件 npm  install vuex --save
+- 创建store/index,配置vuex,const store = new Vuex.Store({state: {counter:1000},mutations: {},actions: {},getters：{}}
+- 在main.js中引入，将store挂载到vue中
+- 补充：所有在stated中挂载的属性都是响应式的，只要修改了，页面就会发生变化，（对象，数组）
+- 如果要对对象的某个属性，数组的某个元素修改，使用的方法Vue.set(),Vue.delete(),这两个方法都是响应式的，
+- 不要使用 数组[o]="lucy"修改数组元素,对象['name']="lucy"为对象添加属性
+- 定义常量文件mutations_types.js，export const INCREMENT ='increment';,然后在其他地方引入，在mutations中使用
+- "[INCREMENT](state)"
+```vue
+import Vue from 'vue'
+import Vuex from 'vuex'
+
+
+// 安装插件
+Vue.use(Vuex)
+
+const store = new Vuex.Store({
+  // 只能通过mutation来修改
+  state: {
+    counter:1000
+  },
+  // 用来处理更新，state中的属性，不要进行异步操作
+  mutations: {                                
+    increment(state){
+      state.counter++         // 另外一整提交方式为：this.$store.commit({ type:'事件名'，参数})
+    },                       // 取出来用时要看下，这个num,就不是num了，改为payload，是一个对象，取出来用 payload.变量名
+    decrement(state){
+      state.counter--
+    }，                    // 参数学术名为payload
+    addCount(state,num){  //这个num也是调用者传递，也可以是一个对象，使用 this.$store.commit('事件名'，传递的参数)
+       state.counter=+num                       
+  },                                                                
+  //代替mutations，执行异步操作   //actions调用者，  
+  actions: {
+   1. aUpdateInfo(context,参数) // 这里的context时上下文
+    setTimeOut(()=>{)
+        context.commmit(这里写mutation中的修改属性的方法) // 调用此方法 // this.$store.dispatch('aUpdateInfo'，参数)
+    },1000) ， // 若要携带参数，这接追加到后面
+  2. aUpdatedInfo(context){      // 1. 调用此方法 // this.$store.dispatch('aUpdateInfo'，参数).then(data=>{处理data})
+        return  new promise((resolve,rejected)=>{            
+            setTimeOut(()=>{    // 模拟异步请求
+            context.commit(这里写mutation中的修改属性的方法)        
+            resolve(异步请求的结果) 必须调用，才会有后面处理
+           }，1000)
+        })   /  
+     }
+    3.aUpdatedInfo(context,payload){                                 //调用者
+         这setTimeOut(()=>{                                           this.$store.dispatch(事件名，{
+          context.commit(这里写mutation中的修改属性的方法)             message:传递的参数，success:()=>{修改属性ok，执行的方法}
+           payload.success()                                              }
+         },1000)                                       
+    }                                                   
+    },                                         
+  //这个就是mounted
+  getters:{         // 使用方式，按照属性来使用this.$store.getters.poverCunter
+    poverCounter(state):{
+       return  state.counter*state.counter
+    }
+    },
+  modules:{}
+
+})
+export default store;
+<!--在需要用修改state中的属性值时只需要在对应的方法中调用，this.$store.commit('对应的属性的事件的处理函数')-->
+<!--action 主要做异步操作，异步请求-->
+<!--getters相当于mounted-->
+```
+![](./images/33.png) 
+![](./images/34.png)                
 ### 项目经验
 1.如果想给插槽设置一定的样式，给插槽包裹一层div，防止属性被替换掉
 2.关于路径问题，脚手架2的方法在webpack.base.conf.js中设置别名，如果不是import方式引入需要在前面加~,设置components、views、assets
 ### css样式(引入css样式)
 - 在<style></style>内部引用样式，@import "地址"，或者在main.js 中require(地址)
+### promise的使用
+- 什么情况下使用promise?,有异步操作时使用，
+- new Promise -> 构造函数(保存了一些状态信息，传入待执行的函数)
+- 在执行回调函数时，会传入两个函数，resolve ，reject ,这两个参数本身又是函数
+- promise的三种状态，pending，fullfiled，rejected，
+```text
+new Promise((resolve,reject)=>{
+    setTimeOut((data)=>{ //这里主要是指发送，异步请求，此处的data时模拟的
+        resolve(data);  //这个会把请求到的数据传递给then
+        reject(err);
+    },1000)
+}).then((data)=>{
+    //处理data
+}).catch((err)=>{
+    //处理错误信息
+}
+)
+)
+```
+```text
+new Promise((resolve,rejected)=>{
+        setTimeOut(()=>{
+            resolve();
+            rejected();
+        })
+    }
+).then(成功函数，拒绝函数)
+).then((data)=>{
+    ok调用的函数
+},err=>{
+    错误的函数
+})
+```
+- 第三种写法
+```text
+new Promise((resolve,rejected)=>{
+    setTimeOut(()=>{
+        resolve(data);
+    },1000)
+}).then(res=>{
+    // 这个res就是上面的data,reject可选
+    return new Promise((resolve)=>{
+    
+        resolve(data)  
+    }).then(res=>{})
+        // 处理结果
+       return new Promise(resolve=>{
+           
+       }).then(res=>{
+           //处理结果
+           return Promise.reject("错误消息")
+           throw '错误信息'
+           return Promise.resolve(data)
+       }).then(res={
+           return res; //将结果直接return
+       }).catch(err=>{
+           //错误处理
+       })
+})
+
+```
+- 如果一个需求需要请求两次网络，都ok后才可以进行处理，在外面定义两个变量，记录函数处理请求发送状态，请求ok，
+- 在请求后，ok后将变量改为true，第三个函数判断两个变量是否都为true
+![](./images/31.png) 
+![](./images/32.png) 
+
 ### 练习
 - 点击数组中的元素，该元素变颜色，其中的active 为一个css样式
 ![](./images/21.png) 
