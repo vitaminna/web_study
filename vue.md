@@ -266,11 +266,32 @@ import aaa(名字随便起，相当于 adress) from ''
     lucy.run()
 2. import * as 变量名 from ''
    取出来用，变量名.需要的方法，属性
+   
+3. 导出某一代码块
+export default {
+    需要输出的代码，在需要引入的地方，名字随便起
+
+}
+
 ```
 ####  commonJs的引入导出
 - model.export={变量，函数}
 - const {变量，函数} =require(js)
-
+### 对象的解构
+```javascript 1.8
+const obj={
+    name:"lucy",
+    adress:"beijing",
+    age:20
+}
+const {name,adress} =obj;  //用多少，取多少
+console.log(name);
+```
+### 数组的解构（用的较少）
+```javascript 1.8
+const arr =['name','id',adress];
+const [name,id,adress] =arr;
+```
 
 ### webpack学习
 - 1.进入到需要编译的项目吗，输入命令：webpack  位置/主js  另外一个位置/新的名字.js 
@@ -617,8 +638,8 @@ const Foo = {
 - 补充：所有在stated中挂载的属性都是响应式的，只要修改了，页面就会发生变化，（对象，数组）
 - 如果要对对象的某个属性，数组的某个元素修改，使用的方法Vue.set(),Vue.delete(),这两个方法都是响应式的，
 - 不要使用 数组[o]="lucy"修改数组元素,对象['name']="lucy"为对象添加属性
-- 定义常量文件mutations_types.js，export const INCREMENT ='increment';,然后在其他地方引入，在mutations中使用
-- "[INCREMENT](state)"
+- 定义常量文件mutations_types.js，export const INCREMENT ='increment';,然后在其他地方引入，在mutations中使用[INCREMENT](state)
+- 文件抽取
 ```vue
 import Vue from 'vue'
 import Vuex from 'vuex'
@@ -626,7 +647,35 @@ import Vuex from 'vuex'
 
 // 安装插件
 Vue.use(Vuex)
+const modelA ={
+        state:{
+            name:"lucy"  // 取出来用 $store.state.a.name
+        },
+        mutations:{
+           upDateName(state,payload){
+                state.name=payload;   //调用，this.$store.commit('upDateName',payload)           
+           }                          // 这里的内部的方法要与外面的不能一样，每个名字都是唯一的，不与其他的重复
+        },
+        getters:{
+            fullname(state){
+                return state.name+"123"   //调用方法一样  this.$store.getters.fullname
+            }
+             fullname(state,getters){ //这个getter时自己内部的，不是全局的
+               return getters.fullname+"123"   
+             }
+             fullname(state,getters，rootState){ //这个getter时自己内部的，不是全局的
+                       return rootState.counter //这是根部的属性  
+             }
+        },
+        actions:{
+             asyncUpdate(context){    //这个context内容见图35
+                这个context提交到自己的mutations，
+                context.commit(自己的mutations)
+             }
+         }
+        
 
+},
 const store = new Vuex.Store({
   // 只能通过mutation来修改
   state: {
@@ -670,7 +719,11 @@ const store = new Vuex.Store({
        return  state.counter*state.counter
     }
     },
-  modules:{}
+  modules:{
+    这里主要时用来分担state，避免state的内容过多
+    a:modelA
+  
+  }
 
 })
 export default store;
@@ -679,7 +732,8 @@ export default store;
 <!--getters相当于mounted-->
 ```
 ![](./images/33.png) 
-![](./images/34.png)                
+![](./images/34.png)    
+![](./images/35.png)               
 ### 项目经验
 1.如果想给插槽设置一定的样式，给插槽包裹一层div，防止属性被替换掉
 ### 关于路径问题，脚手架2的方法在webpack.base.conf.js中设置别名，如果不是import方式引入需要在前面加~,设置components、views、assets
@@ -750,7 +804,57 @@ new Promise((resolve,rejected)=>{
 - 在请求后，ok后将变量改为true，第三个函数判断两个变量是否都为true
 ![](./images/31.png) 
 ![](./images/32.png) 
+### axios的学习
+* 首先安装 npm install axios --save
+* axios.defaults.baseURL="http://123.207.32.32:8000",  全局设置
+* 不要在全部axios中配置信息，有些请求很特殊，需要不一样的配置，这个时候可以使用
+* const instance01 =axios.create({baeUrl:"123",timeOut:"123",这里面就是传入37中的配置})
+* 调用instance01({url:"123",methos:""}),相当于axios({}),
+* axios 封装看具体的项目request04；
+* 拦截器，全局，局部，一个请求，一个响应(config，error)参数是两个函数
+```text
+axios({
+  url:"http://123.207.32.32:8000/home/multidata",
+  method:'get',
+}).then(res=>{
+  console.log(res);
+}),
+axios({
+  url:"http://123.207.32.32:8000/api/w1/home/data?type=sell&page=1",
+  method:'get',
+}).then(res=>{
+  console.log(res);
+}),
+  axios({
+    url:"http://123.207.32.32:8000/api/w1/home/data",
+    params:{
+      type:"sell",
+      page:1
+    },
+    method:'get',
+  }).then(res=>{
+    console.log(res);
+  })
+  
+  axios.all([   // 发送并发请求
+    axios({url:"http://123.207.32.32:8000/api/w1/home/data",params: {type:"sell",page:1}}),
+    axios({url:"http://123.207.32.32:8000/home/multidata"})])
+    .then(results=>{
+      console.log(results[0]);
+      console.log(results[1]);
+    }),
+    axios.all([
+      axios({url:"http://123.207.32.32:8000/api/w1/home/data",params: {type:"sell",page:1}}),
+      axios({url:"http://123.207.32.32:8000/home/multidata"})])
+      .then(axios.spread((res1,res2)=>{   //注意这个函数
+        console.log(res1);
+        console.log(res2)
+      }))
 
+ 
+```
+![](./images/36.png)
+![](./images/37.png)
 ### 练习
 - 点击数组中的元素，该元素变颜色，其中的active 为一个css样式
 ![](./images/21.png) 
