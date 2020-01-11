@@ -198,7 +198,7 @@ watch {
    - (1)在子组件定义一个props:['变量名’，'变量名2’]
       (2)props:{变量名:数据类型} String ,Number,Boolean,Array,Object,Date,Function,Symbol
       (3)props:{变量名:{type:变量类型,default:默认值，required:true}}，当父组件没传时，就用子组件.如果default是一个数组则需要
-         写成函数的样子default(){return[]/{}}
+         写成函数的样子default(){return[]/{}}   2.5以后
       (4)props:{validator:function(){自定义验证}}
    -  (2)在调用方也就是父组件通过v-bind:变量名="父组件内传递的变量值”,父组件传值时，变量名使用驼峰时用-代替
    -  (3)子组件传值时就直接使用变量名
@@ -427,7 +427,7 @@ plugins：[
         new UglifyjsWebpackPlugin()
     ]
     我们所创建的index.html只需要将入<div id="app"></div>不需要手动引入script
- ```
+```
 - 4.热加载
   - 安装插件 npm install webpack-dev-server@2.9.3 --save-dev 对应webpack版本3.6
   - 配置
@@ -570,7 +570,7 @@ export default new Router({
     通过代码控制跳转，vue 给每个组件都添加了一个data属性$router,直接用this.$rouer取出来用
     给对应的元素添加相关的触发方法，通过this.$router.push({path:'路径',query:{name:data内部的值
     }}),this.$router.replace()
- ```
+```
 ### 路由懒加载，js文件打包
  - 如果不区分，会一次性加载全部的js,css代码，脚手架直接分开加载，区分为。1.用户的js，2.服务商/第三方的js，3.为了打包而进行的js转换的代码js
  - const home =()=>import('../components/home');
@@ -578,7 +578,7 @@ export default new Router({
  - 在之前配置的路由的地方嵌套一个children[path:'不带/',components:懒加载组件名]
  - 创建相应的子子组件，(谁用，谁留空间)在引用子组件的地方设置相应的链接，写上完整的路径名
     <router-link  to="/home/message">homeMessage</router-link>
-  并且预留子组件的位置，留坑，<router-view>
+    并且预留子组件的位置，留坑，<router-view>
 ### 路由导航守卫
 > https://router.vuejs.org/zh/guide/advanced/navigation-guards.html#%E5%85%A8%E5%B1%80%E5%89%8D%E7%BD%AE%E5%AE%88%E5%8D%AB
    - 更改标题：在组件created：document.title="名字"
@@ -591,7 +591,7 @@ export default new Router({
          next();  不要忘记调用next()方法
        })
    - router.afterEach((to,from,next)=>{  跳转后进行的操作
-   
+
    })
    - 路由独享守卫
 ```vue

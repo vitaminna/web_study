@@ -1,56 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="05e48dd1-2a79-4483-8ede-ae6ef8db0b84" name="Default" comment="vue1/10 vuex，修改笔记">
-      <change afterPath="$PROJECT_DIR$/axioslearn/.babelrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axioslearn/.editorconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axioslearn/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axioslearn/.postcssrc.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axioslearn/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axioslearn/build/build.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axioslearn/build/check-versions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axioslearn/build/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axioslearn/build/utils.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axioslearn/build/vue-loader.conf.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axioslearn/build/webpack.base.conf.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axioslearn/build/webpack.dev.conf.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axioslearn/build/webpack.prod.conf.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axioslearn/config/dev.env.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axioslearn/config/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axioslearn/config/prod.env.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axioslearn/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axioslearn/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axioslearn/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axioslearn/src/App.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axioslearn/src/assets/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axioslearn/src/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axioslearn/src/network/request.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axioslearn/src/network/request02.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axioslearn/src/network/request03.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axioslearn/src/network/request04.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axioslearn/src/router/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/axioslearn/static/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/35.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/36.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/37.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learnvuex/src/store/actions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learnvuex/src/store/getters.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learnvuex/src/store/modules/modelA.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/learnvuex/src/store/mutations.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/supermall/.browserslistrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/supermall/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/supermall/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/supermall/babel.config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/supermall/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/supermall/package.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/supermall/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/supermall/public/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/supermall/src/App.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/supermall/src/assets/logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/supermall/src/components/HelloWorld.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/supermall/src/main.js" afterDir="false" />
+    <list default="true" id="05e48dd1-2a79-4483-8ede-ae6ef8db0b84" name="Default" comment="vue1/11 supermall">
+      <change afterPath="$PROJECT_DIR$/flex/flex.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/38.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/39.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/40.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/41.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/42.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/images/43.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/supermall/.editorconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/supermall/public/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/supermall/src/assets/css/base.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/supermall/src/assets/css/normalize.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/supermall/src/assets/img/cart/tick.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/supermall/src/assets/img/common/back.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/supermall/src/assets/img/common/collect.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/supermall/src/assets/img/common/placeholder.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/supermall/src/assets/img/common/top.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/supermall/src/assets/img/detail/detail_bottom.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/supermall/src/assets/img/home/recommend_bg.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/supermall/src/assets/img/tabbar/cart.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/supermall/src/assets/img/tabbar/cart_active.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/supermall/src/assets/img/tabbar/category.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/supermall/src/assets/img/tabbar/category_active.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/supermall/src/assets/img/tabbar/home.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/supermall/src/assets/img/tabbar/home_active.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/supermall/src/assets/img/tabbar/profile.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/supermall/src/assets/img/tabbar/profile_active.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/supermall/src/assets/img/test.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/supermall/src/common/const.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/supermall/src/common/utils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/supermall/src/components/common/navbar/NavBar.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/supermall/src/components/common/swiper/Swiper.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/supermall/src/components/common/swiper/SwiperItem.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/supermall/src/components/common/swiper/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/supermall/src/components/common/tabbar/TabBar.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/supermall/src/components/common/tabbar/TabBarItem.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/supermall/src/components/content/mainTabBar/MainTabBar.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/supermall/src/components/content/tabControl/TabControl.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/supermall/src/components/test.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/supermall/src/network/home.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/supermall/src/network/request.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/supermall/src/router/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/supermall/src/views/cart/cart.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/supermall/src/views/category/category.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/supermall/src/views/home/childComps/FeatureVue.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/supermall/src/views/home/childComps/HomeSwiper.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/supermall/src/views/home/childComps/RecommendView.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/supermall/src/views/home/home.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/supermall/src/views/profile/profile.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/supermall/vue.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/vue_02.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/learnvuex/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/learnvuex/src/store/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/supermall/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/supermall/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/supermall/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/supermall/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/supermall/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/supermall/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/supermall/src/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/supermall/src/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/supermall/src/assets/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/supermall/src/components/HelloWorld.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/supermall/src/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/supermall/src/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tarbarutil/src/router/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/tarbarutil/src/router/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/vue.md" beforeDir="false" afterPath="$PROJECT_DIR$/vue.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -61,36 +71,67 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/vue.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="190">
-                <caret line="813" column="34" selection-start-line="813" selection-start-column="34" selection-end-line="813" selection-end-column="34" />
+              <first_editor relative-caret-position="277">
+                <caret line="209" column="21" selection-start-line="209" selection-start-column="20" selection-end-line="209" selection-end-column="21" />
               </first_editor>
               <second_editor />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/axioslearn/src/network/request04.js">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/supermall/src/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="554">
-              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+            <state relative-caret-position="273">
+              <caret line="7" column="9" lean-forward="true" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+              <folding>
+                <element signature="e#0#21#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/axioslearn/src/main.js">
+        <entry file="file://$PROJECT_DIR$/supermall/src/views/home/home.vue">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1044">
-              <caret line="94" column="38" selection-start-line="94" selection-start-column="38" selection-end-line="94" selection-end-column="38" />
+            <state relative-caret-position="1440">
+              <caret line="98" column="6" lean-forward="true" selection-start-line="98" selection-start-column="6" selection-end-line="98" selection-end-column="6" />
               <folding>
-                <element signature="e#0#21#0" expanded="true" />
-                <element signature="e#1313#1355#0" expanded="true" />
+                <element signature="n#ul#0;n#div#0;n#template#0;n#!!top" />
+                <element signature="e#526#578#0" expanded="true" />
+                <element signature="e#2623#2641#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/supermall/src/views/home/childComps/HomeSwiper.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="78">
+              <caret line="2" column="50" lean-forward="true" selection-start-line="2" selection-start-column="50" selection-end-line="2" selection-end-column="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/supermall/src/network/home.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="273">
+              <caret line="7" column="27" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/supermall/src/components/content/tabControl/TabControl.vue">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="663">
+              <caret line="17" column="7" lean-forward="true" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
             </state>
           </provider>
         </entry>
@@ -100,10 +141,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
-        <option value="Vue Single File Component" />
         <option value="HTML File" />
+        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="Vue Single File Component" />
       </list>
     </option>
   </component>
@@ -124,6 +165,7 @@
       <find>路径</find>
       <find>导入</find>
       <find>结构</find>
+      <find>输入</find>
     </findStrings>
     <replaceStrings>
       <replace>~</replace>
@@ -141,37 +183,10 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/demo_test/target.html" />
-        <option value="$PROJECT_DIR$/demo_test/test.html" />
-        <option value="$PROJECT_DIR$/demo_div/background.html" />
-        <option value="$PROJECT_DIR$/盒子模型练习/教师案例.html" />
-        <option value="$PROJECT_DIR$/定位/test.html" />
-        <option value="$PROJECT_DIR$/百度/百度.html" />
-        <option value="$PROJECT_DIR$/remind.md" />
-        <option value="$PROJECT_DIR$/vue.remind" />
-        <option value="$PROJECT_DIR$/vue/购物车.html" />
-        <option value="$PROJECT_DIR$/vuecli3test/public/index.html" />
-        <option value="$PROJECT_DIR$/vuerouter/src/App.vue" />
-        <option value="$PROJECT_DIR$/vuerouter/src/components/test.vue" />
-        <option value="$PROJECT_DIR$/vuerouter/src/components/about.vue" />
-        <option value="$PROJECT_DIR$/vuerouter/src/router/index.js" />
-        <option value="$PROJECT_DIR$/tarbarutil/src/components/HelloWorld.vue" />
-        <option value="$PROJECT_DIR$/tarbarutil/src/assets/css/base.css" />
-        <option value="$PROJECT_DIR$/tarbarutil/src/components/TabBarItem.vue" />
-        <option value="$PROJECT_DIR$/tarbarutil/src/assets/img/tabbar/category_active.svg" />
-        <option value="$PROJECT_DIR$/tarbarutil/src/main.js" />
-        <option value="$PROJECT_DIR$/tarbarutil/src/view/cart/cart.vue" />
-        <option value="$PROJECT_DIR$/tarbarutil/src/view/profile/profile.vue" />
-        <option value="$PROJECT_DIR$/tarbarutil/src/view/home/home.vue" />
-        <option value="$PROJECT_DIR$/tarbarutil/src/view/catergory/category.vue" />
-        <option value="$PROJECT_DIR$/tarbarutil/src/views/profile/profile.vue" />
-        <option value="$PROJECT_DIR$/tarbarutil/src/views/cart/cart.vue" />
-        <option value="$PROJECT_DIR$/tarbarutil/src/router/index.js" />
         <option value="$PROJECT_DIR$/tarbarutil/src/views/category/category.vue" />
         <option value="$PROJECT_DIR$/tarbarutil/src/components/tabbar/TabBar.vue" />
         <option value="$PROJECT_DIR$/tarbarutil/src/components/tabbar/TabBarItem.vue" />
         <option value="$PROJECT_DIR$/tarbarutil/src/components/tabbar/MainTabBar.vue" />
-        <option value="$PROJECT_DIR$/tarbarutil/build/webpack.base.conf.js" />
         <option value="$PROJECT_DIR$/tarbarutil/src/App.vue" />
         <option value="$PROJECT_DIR$/learnvuex/src/main.js" />
         <option value="$PROJECT_DIR$/learnvuex/src/router/index.js" />
@@ -192,6 +207,33 @@
         <option value="$PROJECT_DIR$/vue.md" />
         <option value="$PROJECT_DIR$/axioslearn/src/main.js" />
         <option value="$PROJECT_DIR$/axioslearn/src/network/request04.js" />
+        <option value="$PROJECT_DIR$/supermall/src/common/const.js" />
+        <option value="$PROJECT_DIR$/supermall/src/common/utils.js" />
+        <option value="$PROJECT_DIR$/supermall/src/assets/css/normalize.css" />
+        <option value="$PROJECT_DIR$/supermall/src/assets/css/base.css" />
+        <option value="$PROJECT_DIR$/supermall/vue.config.js" />
+        <option value="$PROJECT_DIR$/tarbarutil/build/webpack.base.conf.js" />
+        <option value="$PROJECT_DIR$/supermall/src/components/content/mainTabBar/MainTabBar.vue" />
+        <option value="$PROJECT_DIR$/tarbarutil/src/router/index.js" />
+        <option value="$PROJECT_DIR$/supermall/src/route/index.js" />
+        <option value="$PROJECT_DIR$/supermall/src/main.js" />
+        <option value="$PROJECT_DIR$/supermall/src/components/test.vue" />
+        <option value="$PROJECT_DIR$/supermall/src/router/index.js" />
+        <option value="$PROJECT_DIR$/supermall/src/App.vue" />
+        <option value="$PROJECT_DIR$/supermall/public/index.html" />
+        <option value="$PROJECT_DIR$/supermall/src/components/common/navbar/NavBar.vue" />
+        <option value="$PROJECT_DIR$/supermall/src/views/cart/cart.vue" />
+        <option value="$PROJECT_DIR$/supermall/src/network/request.js" />
+        <option value="$PROJECT_DIR$/supermall/src/views/home/childComps/RecommengView.vue" />
+        <option value="$PROJECT_DIR$/supermall/src/views/home/childComps/RecommendView.vue" />
+        <option value="$PROJECT_DIR$/supermall/src/views/home/childComps/FeatureVue.vue" />
+        <option value="$PROJECT_DIR$/flex布局/flex.md" />
+        <option value="$PROJECT_DIR$/vue_02.md" />
+        <option value="$PROJECT_DIR$/flex/flex.md" />
+        <option value="$PROJECT_DIR$/supermall/src/components/content/tabControl/TabControl.vue" />
+        <option value="$PROJECT_DIR$/supermall/src/network/home.js" />
+        <option value="$PROJECT_DIR$/supermall/src/views/home/home.vue" />
+        <option value="$PROJECT_DIR$/supermall/src/views/home/childComps/HomeSwiper.vue" />
       </list>
     </option>
   </component>
@@ -210,10 +252,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="791" />
-    <option name="y" value="49" />
-    <option name="width" value="1440" />
-    <option name="height" value="1043" />
+    <option name="x" value="305" />
+    <option name="y" value="63" />
+    <option name="width" value="1433" />
+    <option name="height" value="1044" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -234,27 +276,78 @@
             <path>
               <item name="web_study" type="b2602c69:ProjectViewProjectNode" />
               <item name="web_study" type="462c0819:PsiDirectoryNode" />
-              <item name="axioslearn" type="462c0819:PsiDirectoryNode" />
+              <item name="flex" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="web_study" type="b2602c69:ProjectViewProjectNode" />
               <item name="web_study" type="462c0819:PsiDirectoryNode" />
-              <item name="axioslearn" type="462c0819:PsiDirectoryNode" />
+              <item name="supermall" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="web_study" type="b2602c69:ProjectViewProjectNode" />
+              <item name="web_study" type="462c0819:PsiDirectoryNode" />
+              <item name="supermall" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="web_study" type="b2602c69:ProjectViewProjectNode" />
               <item name="web_study" type="462c0819:PsiDirectoryNode" />
-              <item name="axioslearn" type="462c0819:PsiDirectoryNode" />
+              <item name="supermall" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="web_study" type="b2602c69:ProjectViewProjectNode" />
+              <item name="web_study" type="462c0819:PsiDirectoryNode" />
+              <item name="supermall" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="content" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="web_study" type="b2602c69:ProjectViewProjectNode" />
+              <item name="web_study" type="462c0819:PsiDirectoryNode" />
+              <item name="supermall" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="components" type="462c0819:PsiDirectoryNode" />
+              <item name="content" type="462c0819:PsiDirectoryNode" />
+              <item name="tabControl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="web_study" type="b2602c69:ProjectViewProjectNode" />
+              <item name="web_study" type="462c0819:PsiDirectoryNode" />
+              <item name="supermall" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="network" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="web_study" type="b2602c69:ProjectViewProjectNode" />
               <item name="web_study" type="462c0819:PsiDirectoryNode" />
-              <item name="axioslearn" type="462c0819:PsiDirectoryNode" />
+              <item name="supermall" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="router" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="web_study" type="b2602c69:ProjectViewProjectNode" />
+              <item name="web_study" type="462c0819:PsiDirectoryNode" />
+              <item name="supermall" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="home" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="web_study" type="b2602c69:ProjectViewProjectNode" />
+              <item name="web_study" type="462c0819:PsiDirectoryNode" />
+              <item name="supermall" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="views" type="462c0819:PsiDirectoryNode" />
+              <item name="home" type="462c0819:PsiDirectoryNode" />
+              <item name="childComps" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="web_study" type="b2602c69:ProjectViewProjectNode" />
+              <item name="web_study" type="462c0819:PsiDirectoryNode" />
+              <item name="箭头" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -271,7 +364,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="editor.config.ad.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/axioslearn/src/network" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/images" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path" value="E:/soft_stydy/node/node" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -282,15 +375,16 @@
     <property name="ts.external.directory.path" value="E:\soft_stydy\WebStorm 2019.1\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="F:\data\code\qian_duan\web_study\axioslearn\src\network" />
-      <recent name="F:\data\code\qian_duan\web_study\images" />
-      <recent name="F:\data\code\qian_duan\web_study" />
-      <recent name="F:\data\code\qian_duan\web_study\tarbarutil\src\view" />
-      <recent name="F:\data\code\qian_duan\web_study\tarbarutil\src\assets\img" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\data\code\qian_duan\web_study\supermall\src\components\content\mainTabBar" />
       <recent name="F:\data\code\qian_duan\web_study\tarbarutil\src\components\tabbar" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\data\code\qian_duan\web_study\images" />
+      <recent name="F:\data\code\qian_duan\web_study\supermall\src\components\common" />
+      <recent name="F:\data\code\qian_duan\web_study\supermall\public" />
+      <recent name="F:\data\code\qian_duan\web_study\supermall\src\views" />
+      <recent name="F:\data\code\qian_duan\web_study\supermall\src\assets\img" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -421,7 +515,7 @@
       <workItem from="1578640632143" duration="7666000" />
       <workItem from="1578650062496" duration="10000" />
       <workItem from="1578650143547" duration="15060000" />
-      <workItem from="1578709514801" duration="3185000" />
+      <workItem from="1578709514801" duration="38215000" />
     </task>
     <task id="LOCAL-00001" summary="web学习">
       <created>1577873450847</created>
@@ -591,11 +685,18 @@
       <option name="project" value="LOCAL" />
       <updated>1578651617845</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="vue1/11 supermall">
+      <created>1578714260593</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1578714260593</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="209900000" />
+    <option name="totallyTimeSpent" value="244930000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -610,21 +711,21 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.24986821" />
-      <window_info id="Image Layers" order="1" />
-      <window_info id="Designer" order="2" />
-      <window_info id="UI Designer" order="3" />
-      <window_info id="Capture Tool" order="4" />
-      <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info id="Image Layers" order="0" />
+      <window_info id="Designer" order="1" />
+      <window_info id="UI Designer" order="2" />
+      <window_info id="Capture Tool" order="3" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" visible="true" weight="0.17395888" />
       <window_info id="Structure" order="6" weight="0.24986821" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32928178" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.52287585" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.7642458" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
@@ -703,150 +804,10 @@
     <MESSAGE value="vue1/9 TabBar制作" />
     <MESSAGE value="vue1/10 vuex" />
     <MESSAGE value="vue1/10 vuex，修改笔记" />
-    <option name="LAST_COMMIT_MESSAGE" value="vue1/10 vuex，修改笔记" />
+    <MESSAGE value="vue1/11 supermall" />
+    <option name="LAST_COMMIT_MESSAGE" value="vue1/11 supermall" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/vuecli3test/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vuecli3test/src/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vuecli3test/src/App.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="7" column="8" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vuecli3test/public/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="4" column="43" selection-start-line="4" selection-start-column="43" selection-end-line="4" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vuecli3test/node_modules/vue/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="2" column="22" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vuecli3test/node_modules/@vue/cli-service/webpack.config.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vuecli3test/node_modules/@vue/cli-service/lib/Service.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="142" column="6" selection-start-line="142" selection-start-column="6" selection-end-line="142" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vuerouter/src/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="9" column="9" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vue/购物车.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="39">
-          <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vuerouter/src/App.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="4" column="37" selection-start-line="4" selection-start-column="37" selection-end-line="4" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vuerouter/src/components/test.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="2" column="27" selection-start-line="2" selection-start-column="27" selection-end-line="2" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vuerouter/src/components/about.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="117">
-          <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vuerouter/src/router/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="41" column="20" selection-start-line="41" selection-start-column="20" selection-end-line="41" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tarbarutil/src/components/HelloWorld.vue" />
-    <entry file="file://$PROJECT_DIR$/tarbarutil/src/assets/css/base.css" />
-    <entry file="file://$PROJECT_DIR$/tarbarutil/src/router/index.js" />
-    <entry file="file://$PROJECT_DIR$/tarbarutil/src/views/home/home.vue" />
-    <entry file="file://$PROJECT_DIR$/tarbarutil/src/views/profile/profile.vue" />
-    <entry file="file://$PROJECT_DIR$/tarbarutil/src/views/cart/cart.vue" />
-    <entry file="file://$PROJECT_DIR$/tarbarutil/src/views/category/category.vue" />
-    <entry file="file://$PROJECT_DIR$/tarbarutil/src/components/tabbar/TabBarItem.vue" />
-    <entry file="file://$PROJECT_DIR$/tarbarutil/build/webpack.dev.conf.js" />
-    <entry file="file://$PROJECT_DIR$/tarbarutil/src/components/tabbar/TabBar.vue" />
-    <entry file="file://$PROJECT_DIR$/tarbarutil/build/webpack.base.conf.js" />
-    <entry file="file://$PROJECT_DIR$/tarbarutil/src/components/tabbar/MainTabBar.vue" />
-    <entry file="file://$PROJECT_DIR$/tarbarutil/src/main.js" />
-    <entry file="file://$PROJECT_DIR$/tarbarutil/src/App.vue" />
-    <entry file="file://$PROJECT_DIR$/learnvuex/src/main.js" />
-    <entry file="file://$PROJECT_DIR$/箭头函数/箭头函数.html" />
-    <entry file="file://$PROJECT_DIR$/demo_goole/goole.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="4" column="10" selection-end-line="34" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/箭头/箭头函数.html" />
-    <entry file="file://$PROJECT_DIR$/learnvuex/src/router/index.js" />
-    <entry file="file://$PROJECT_DIR$/learnvuex/src/App.vue" />
-    <entry file="file://$PROJECT_DIR$/learnvuex/src/store/mutations_types.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/learnvuex/src/store/mutations.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/learnvuex/src/store/actions.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="585">
-          <caret line="15" column="1" selection-start-line="15" selection-start-column="1" selection-end-line="15" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/learnvuex/src/store/getters.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="819">
-          <caret line="21" column="1" selection-start-line="21" selection-start-column="1" selection-end-line="21" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/learnvuex/src/store/modules/modelA.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="507">
@@ -895,20 +856,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/axioslearn/src/network/request03.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="273">
-          <caret line="7" column="6" lean-forward="true" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/axioslearn/src/App.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/package-lock.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="351">
@@ -926,8 +873,298 @@
     <entry file="file://$PROJECT_DIR$/remind.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor />
+          <first_editor relative-caret-position="-117">
+            <caret line="12" column="11" selection-start-line="12" selection-start-column="11" selection-end-line="12" selection-end-column="11" />
+          </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/supermall/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="312">
+            <caret line="8" selection-start-line="8" selection-end-line="9" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/supermall/src/common/utils.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/supermall/.editorconfig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="8" column="11" selection-start-line="8" selection-start-column="11" selection-end-line="8" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/supermall/src/common/const.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/supermall/src/assets/img/tabbar/cart.svg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tarbarutil/build/webpack.base.conf.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/supermall/vue.config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/supermall/src/components/common/tabbar/TabBar.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="359">
+          <caret line="10" column="9" lean-forward="true" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/supermall/src/components/common/tabbar/TabBarItem.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1669" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/supermall/src/components/content/mainTabBar/MainTabBar.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1170">
+          <caret line="30" column="20" lean-forward="true" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
+          <folding>
+            <element signature="e#1127#1179#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/supermall/public/favicon.ico">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/supermall/src/assets/css/base.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-975">
+          <caret line="18" column="13" lean-forward="true" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/supermall/src/assets/css/normalize.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1287" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/supermall/src/components/test.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="2" column="10" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tarbarutil/src/router/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/supermall/src/router/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="15" column="38" lean-forward="true" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/supermall/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="6" column="50" selection-start-line="6" selection-start-column="50" selection-end-line="6" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tarbarutil/src/views/profile/profile.vue">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tarbarutil/src/views/home/home.vue">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tarbarutil/src/views/category/category.vue">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tarbarutil/src/views/cart/cart.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="8" column="9" lean-forward="true" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/supermall/src/views/cart/cart.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="6" column="20" lean-forward="true" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/supermall/src/components/common/navbar/NavBar.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="39">
+          <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/axioslearn/src/App.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="10" column="9" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/axioslearn/src/network/request03.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="424">
+          <caret line="12" column="21" lean-forward="true" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/axioslearn/src/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="91" column="21" lean-forward="true" selection-start-line="91" selection-start-column="21" selection-end-line="91" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+            <element signature="e#1313#1355#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/axioslearn/src/network/request04.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="15" column="5" lean-forward="true" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/supermall/src/network/request.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="15" column="5" lean-forward="true" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/supermall/src/components/common/swiper/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="4" column="20" lean-forward="true" selection-start-line="4" selection-start-column="2" selection-end-line="4" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/supermall/src/components/common/swiper/SwiperItem.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="268">
+          <caret line="10" column="9" lean-forward="true" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/supermall/src/components/common/swiper/Swiper.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-429">
+          <caret line="4" column="12" lean-forward="true" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/supermall/src/views/home/childComps/RecommendView.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="542">
+          <caret line="38" column="11" lean-forward="true" selection-start-line="38" selection-start-column="11" selection-end-line="38" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/supermall/src/views/home/childComps/FeatureVue.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="8" column="25" selection-start-line="8" selection-start-column="25" selection-end-line="8" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vue_02.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="702">
+            <caret line="18" column="9" lean-forward="true" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/flex/flex.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="528">
+            <caret line="38" column="9" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/supermall/src/App.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="5" column="11" lean-forward="true" selection-start-line="5" selection-start-column="11" selection-end-line="5" selection-end-column="11" />
+          <folding>
+            <element signature="e#98#163#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/supermall/src/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="7" column="9" lean-forward="true" selection-start-line="7" selection-start-column="9" selection-end-line="7" selection-end-column="9" />
+          <folding>
+            <element signature="e#0#21#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/supermall/src/components/content/tabControl/TabControl.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="17" column="7" lean-forward="true" selection-start-line="17" selection-start-column="7" selection-end-line="17" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/supermall/src/network/home.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="273">
+          <caret line="7" column="27" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/supermall/src/views/home/home.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1440">
+          <caret line="98" column="6" lean-forward="true" selection-start-line="98" selection-start-column="6" selection-end-line="98" selection-end-column="6" />
+          <folding>
+            <element signature="n#ul#0;n#div#0;n#template#0;n#!!top" />
+            <element signature="e#526#578#0" expanded="true" />
+            <element signature="e#2623#2641#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/supermall/src/views/home/childComps/HomeSwiper.vue">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="2" column="50" lean-forward="true" selection-start-line="2" selection-start-column="50" selection-end-line="2" selection-end-column="50" />
         </state>
       </provider>
     </entry>
@@ -939,28 +1176,10 @@
       </provider>
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="190">
-            <caret line="813" column="34" selection-start-line="813" selection-start-column="34" selection-end-line="813" selection-end-column="34" />
+          <first_editor relative-caret-position="277">
+            <caret line="209" column="21" selection-start-line="209" selection-start-column="20" selection-end-line="209" selection-end-column="21" />
           </first_editor>
           <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/axioslearn/src/main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1044">
-          <caret line="94" column="38" selection-start-line="94" selection-start-column="38" selection-end-line="94" selection-end-column="38" />
-          <folding>
-            <element signature="e#0#21#0" expanded="true" />
-            <element signature="e#1313#1355#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/axioslearn/src/network/request04.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="554">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
         </state>
       </provider>
     </entry>
