@@ -21,6 +21,13 @@
   这个tab-control是一个子组件，titles要求是一个数组，若不加： 传递的是一个字符串
   所以需要加：
   ```
+ ### better-Scroll的使用
+ - 在最外层写个wrapper,里面写一个元素，在这个元素内部可以添加更多的元素div是wrapper 里面写一个ul ul 里面有很多li
+ - 这个warpper所管理的容器必须设置一定的高度，overflow:hidden是隐藏超出的内容
+```html
+
+```
+  
 
   
 

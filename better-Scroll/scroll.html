@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .wrapper {
+            height: 200px;
+            background-color: red;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <ul>
+            <button class="btn">按钮</button>
+            <li>这里是数据1</li>
+            <li>这里是数据2</li>
+            <li>这里是数据3</li>
+            <li>这里是数据4</li>
+            <li>这里是数据5</li>
+            <li>这里是数据6</li>
+            <li>这里是数据7</li>
+            <li>这里是数据8</li>
+            <li>这里是数据9</li>
+            <li>这里是数据10</li>
+            <li>这里是数据11</li>
+            <li>这里是数据12</li>
+            <li>这里是数据13</li>
+            <li>这里是数据14</li>
+            <li>这里是数据15</li>
+            <li>这里是数据16</li>
+            <li>这里是数据17</li>
+            <li>这里是数据18</li>
+            <li>这里是数据19</li>
+            <li>这里是数据20</li>
+            <li>这里是数据21</li>
+            <li>这里是数据22</li>
+            <li>这里是数据23</li>
+            <li>这里是数据24</li>
+            <li>这里是数据25</li>
+            <li>这里是数据26</li>
+            <li>这里是数据27</li>
+            <li>这里是数据28</li>
+            <li>这里是数据29</li>
+            <li>这里是数据30</li>
+            <li>这里是数据31</li>
+            <li>这里是数据32</li>
+            <li>这里是数据33</li>
+            <li>这里是数据34</li>
+            <li>这里是数据35</li>
+            <li>这里是数据36</li>
+            <li>这里是数据37</li>
+            <li>这里是数据38</li>
+            <li>这里是数据39</li>
+            <li>这里是数据40</li>
+            <li>这里是数据41</li>
+            <li>这里是数据42</li>
+            <li>这里是数据43</li>
+            <li>这里是数据44</li>
+            <li>这里是数据45</li>
+            <li>这里是数据46</li>
+            <li>这里是数据47</li>
+            <li>这里是数据48</li>
+            <li>这里是数据49</li>
+            <li>这里是数据50</li>
+        </ul>
+    </div>
+<script src="./bscroll.js"></script>
+<script>
+    //probetype：0 默认值，不监听实时位置，1 不监听，2只监听手指滑动时的位置，不侦听惯性滑动 3只要页面滑动就记录位置
+    //监听滑动的时候的方法
+    const bscroll = new BScroll(document.querySelector('.wrapper'),{
+        probeType: 3,
+        click:true,  //这里设置为true时，才可以监听wrapper内部的事件
+        pullUpLoad: true //上拉加载数据
+    })
+    document.querySelector('.btn').addEventListener('click',function () {
+        console.log("点击了");
+    })
+    bscroll.on('pullingUp',()=>{
+        console.log("加载更多");   // 默认只执行一次，修改：
+        // 发送网络请求
+        setTimeout(()=>{
+            bscroll.finishPullUp()  //本次加载更多完成
+        },2000)
+    })
+    bscroll.on('scroll',(postion)=>{
+        // console.log(postion);
+    })
+</script>
+</body>
+</html>

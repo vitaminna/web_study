@@ -7,7 +7,7 @@ export function getHomeMultidata() {
 }
 export function getHomeData(type,page) {
     return request({
-      url: "api/w1/home/data",
+      url: "api/hy/home/data",
       params:{
         type,
         page
