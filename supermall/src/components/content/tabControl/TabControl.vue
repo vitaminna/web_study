@@ -1,11 +1,9 @@
 <template>
-  <div class="tab-control">
-    <div v-for="(item ,index) in titles"
-         class="tab-control-item"
-         :class="{activeFont:index == currentIndex}"
-          @click="itemClick(index)">
-      <span>{{item}}</span>
-    </div>
+  <div class="container">
+      <div v-for="(item,index) in titles" class="item" :class="{active:index==currentIndex}" v-on:click="changeTitle(index)">
+        <span>{{item}}</span>
+      </div>
+
   </div>
 </template>
 
@@ -14,7 +12,7 @@
     name: "TabControl",
     data() {
       return {
-        currentIndex:0
+        currentIndex:0,
       }
     },
     props: {
@@ -25,36 +23,31 @@
         }
       }
     },
-    methods:{
-      itemClick(index){
-        this.currentIndex=index;
-        this.$emit('getTypeData',index)
+    methods: {
+      changeTitle(index) {
+        // 我开始用的是switch
+        this.currentIndex = index;
+        this.$emit('sendChangeItem',index)
       }
     }
   }
 </script>
 
 <style scoped>
-  .tab-control {
-    display: flex;
-    text-align: center;
-    height: 40px;
-    line-height: 40px;
-    font-size: 15px;
-    background-color: white;
-  }
-
-  .tab-control-item {
+.container{
+  display: flex;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+  .item{
     flex: 1;
   }
-  .tab-control-item span{
-      padding: 5px;
-
-  }
-  .activeFont{
+  .active span {
     color: var(--color-high-text);
-  }
-  .activeFont span{
-    border-bottom:3px solid var(--color-high-text);
+    padding: 5px;
+    border-bottom: 2px solid #FF5777;
   }
 </style>

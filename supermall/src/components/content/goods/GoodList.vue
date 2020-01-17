@@ -1,6 +1,6 @@
 <template>
-    <div class="goodlist">
-        <good-list-items v-for="item in goods" :item="item"></good-list-items>
+    <div class="container">
+      <good-list-items v-for="item in itemList" :item="item"></good-list-items>
     </div>
 </template>
 
@@ -13,7 +13,7 @@
       GoodListItems
     },
     props:{
-      goods:{
+      itemList:{
         type:Array,
         default() {
           return[]
@@ -24,10 +24,10 @@
 </script>
 
 <style scoped>
-.goodlist{
+.container {
   display: flex;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
   justify-content: space-around;
-  padding: 2px;
 }
+
 </style>

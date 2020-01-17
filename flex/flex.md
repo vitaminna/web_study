@@ -17,12 +17,12 @@
      - `row-reverse`从右上角往左
      - `column`从左上往下
      - `column-reverse`左下往上 
-- 2.`justify-content` 决定item在主轴上的对齐方式
-- 3.`align-items` 决定item在交叉轴上的对齐方式
+- 2.`justify-content` 决定item在主轴上的对齐方式(居中center，靠左flext-start，靠右，平分剩余空间(每个盒子的左右都有值space-around)，两边贴边，其余平分space-between)
+- 3.`align-items` 决定item在交叉轴上的对齐方式(单行，单行)
 - 4.基线就是第一行文字的下方对齐
-- 5.`flex-wrap`默认是在一行显示，默认是nowrap,若需要修改，则改为wrap ，还有一个wrap-reverse 少用
+- 5.`flex-wrap`默认是在一行显示，如果宽度不够，就缩小元素的宽度默认是nowrap,若需要修改，则改为wrap ，还有一个wrap-reverse 少用
 - 6.flex-flow 是flex-direction与flex-wrap的结合
-- 7. align-content决定多行的flex items在交叉轴上的对齐方式
+- 7. align-content决定（多行的）items在交叉轴上的对齐方式
 ### 三、item的css属性
 - 1.order ，值越小越靠前，每个单独的设置，决定显示顺序
 - 2.align-self，决定自己在交叉轴上的显示位置。覆盖父元素的设置

@@ -1,175 +1,187 @@
 <template>
   <div id="home">
-    <nav-bar class="home-nav">
+    <nav-bar class="home-nav-bar">
       <div slot="center">购物街</div>
     </nav-bar>
-      <scroll class="content" ref="scroll" :probe-type="3" @getPostion="getPostion">
-        <home-swiper :banners="banners"></home-swiper>
-        <recommend-view :recommend="recommend"></recommend-view>
-        <feature-vue></feature-vue>
-        <tab-control :titles="['流行','新款','新选']" class="tabBarControl" @getTypeData="getTypeData"></tab-control>
-        <good-list :goods="sendGoodList"></good-list>
-      </scroll>
-    <back-top @click.native="backTop" v-show="isShow"/>
+    <scroll class="content" ref="scroll" @getPostion="getPostion" @pullingUp="loadMore">
+      <home-swiper :banners="banners"></home-swiper>
+      <recommend-view :recommend="recommends"></recommend-view>
+      <feature-vue></feature-vue>
+      <tab-control :titles="titiles" @sendChangeItem="changeItem"></tab-control>
+      <good-list :itemList="itemList"></good-list>
+    </scroll>
+    <back-top @click.native="backTop" :class="{showBackTop:isShow}"></back-top>
+
   </div>
 </template>
 
 <script>
   import NavBar from 'components/common/navbar/NavBar'
+  import Swiper from "../../components/common/swiper/Swiper";
+  import HomeSwiper from 'views/home/childComps/HomeSwiper'
+  import RecommendView from 'views/home/childComps/RecommendView'
+  import FeatureVue from 'views/home/childComps/FeatureVue'
   import TabControl from 'components/content/tabControl/TabControl'
   import GoodList from 'components/content/goods/GoodList'
   import Scroll from 'components/common/scroll/Scroll'
   import BackTop from 'components/content/backTop/BackTop'
 
-  import HomeSwiper from './childComps/HomeSwiper'
-  import RecommendView from './childComps/RecommendView'
-  import FeatureVue from './childComps/FeatureVue'
-
 
   import {getHomeMultidata, getHomeData} from 'network/home'
 
+
   export default {
     name: "home",
+    components: {
+      Swiper,
+      NavBar,
+      HomeSwiper,
+      RecommendView,
+      FeatureVue,
+      TabControl,
+      GoodList,
+      BackTop,
+      Scroll
+    },
     data() {
       return {
         banners: [],
-        recommend: [],
+        recommends: [],
+        titiles: ['流行', '新款', '精选'],
         goods: {
           'pop': {page: 0, list: []},
-          'new': {page: 0, list: []},
-          'sell': {page: 0, list: []}
+          'sell': {page: 0, list: []},
+          'new': {page: 0, list: []}
         },
         currentType: 'pop',
-        goodsaaa: {
-          pop: {page: 0, list: []},
-          news: {page: 0, list: []},
-          sell: {page: 0, list: []}
-        },
-        persons: {
-          name: "lucy",
-          adress: {
-            shi: [],
-            sheng: []
-          }
-        },
-        isShow:false,
+        isShow: true
       }
     },
     computed: {
-      sendGoodList() {
+      itemList() {
         return this.goods[this.currentType].list
       }
     },
-    components: {
-      NavBar,
-      TabControl,
-      GoodList,
-      Scroll,
-      BackTop,
-      HomeSwiper,
-      RecommendView,
-      FeatureVue
-    },
     created() {
-      //请求多个数据
       this.getHomeMultidata();
-      this.getHomeData('pop');
-      this.getHomeData('sell');
-      this.getHomeData('new');
+      this.getHomeData('pop')
+      this.getHomeData('sell')
+      this.getHomeData('new')
+    },
+    mounted(){
+      this.$bus.$on('loadImage',()=>{
+        this.$refs.scroll.myRefresh();
+      })
     },
     methods: {
       /**
-       * 一般点击方法
+       * 点击事件
        */
-      getTypeData(index) {
-        switch (index) {
-          case 0:
-            this.currentType = 'pop';
-            break;
-          case 1:
-            this.currentType = 'new';
-            break
-          case 2:
-            this.currentType = 'sell';
-            break
+      debounce(func, delay) {
+        let timer = null;
+        return function (...args) {
+          if (timer) {
+            clearTimeout(timer)
+          }else{
+            timer=setTimeout(()=>{
+              func.apply(this,args)
+            },delay)
+          }
         }
       },
-      backTop(postion) {
-        // console.log("返回top");
-        //返回顶部，通过ref调用子组件的方法，给子组件添加一个ref
+      backTop() {
+        // console.log("点击了返回顶部");
         this.$refs.scroll.backHomeTop(0, 0);
       },
       getPostion(postion) {
         // console.log(postion);
-        this.isShow=(-postion.y) > 800;
+        if (-postion.y > 1000) {
+          this.isShow = false;
+        } else {
+          this.isShow = true;
+        }
+      },
+      loadMore() {
+        console.log("王红元");
+        this.getHomeData(this.currentType)
       },
 
+
       /**
-       * 网络请求方法
+       * 数据请求
        */
       getHomeMultidata() {
         getHomeMultidata().then(res => {
+          console.log(res);
           this.banners = res.data.banner.list;
-          this.recommend = res.data.recommend.list;
+          this.recommends = res.data.recommend.list;
+        }).catch(err => {
+          console.log(err);
         })
       },
       getHomeData(type) {
-        let page = this.goods[type].page + 1;
+        let page = ++this.goods[type].page;
         getHomeData(type, page).then(res => {
-          this.goods[type].list = res.data.list;
-          console.log(res.data);
+          console.log(res);
+          this.goods[type].list.push(...res.data.list);
+          // this.goods[type].page++;以为前面已经用了自加
+          this.$refs.scroll.pullUpFinish()
+        }).catch(err => {
+          console.log(err);
         })
-        this.goods[type].page++;
-      }
+      },
+      changeItem(index) {
+        switch (index) {
+          case 0: {
+            this.currentType = 'pop';
+            break
+          }
+          case 1: {
+            this.currentType = 'new';
+            break
+          }
+          case 2: {
+            this.currentType = 'sell';
+            break
+          }
 
+
+        }
+      }
     }
   }
 </script>
 
 <style scoped>
   #home {
-    padding-top: 44px;
-    height: 100vh;
+    /*margin-top: 44px;*/
     position: relative;
+    height: 100vh;
   }
 
-  .home-nav {
+  .home-nav-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     background-color: var(--color-tint);
     color: #fff;
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
     z-index: 9;
   }
 
-  .tabBarControl {
-    /*吸顶效果*/
-    position: sticky;
-    /*距离顶部距离*/
-    top: 44px;
-    z-index: 9;
-  }
-
-  /*.content{*/
-  /*  height: calc(100% - 93px);*/
-  /*  overflow: hidden;*/
-  /*  margin-top: 44px;*/
-  /*}*/
   .content {
-    overflow: hidden;
+    /*background-color: red;*/
     position: absolute;
-    top: 44px;
-    bottom: 49px;
-    right: 0;
+    overflow: hidden;
     left: 0;
+    right: 0;
+    top: 44px;
+    bottom: 50px;
   }
-  .middleContent{
-    /*overflow: hidden;*/
-    /*position: absolute;*/
-    /*top: 44px;*/
-    /*bottom: 49px;*/
-    /*right: 0;*/
-    /*left: 0;*/
+
+  /*也可以使用v-show*/
+  .showBackTop {
+    display: none;
   }
+
 </style>
